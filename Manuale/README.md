@@ -759,51 +759,99 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 ### 5.1 Codici di validazione
 
-#### Codici di validazione delle misure
-
-
-|   |   |   |   |
-| - | - | - | - |
-|   |   | <b>Descrizione</b> | <b>CalcCode</b> |
-|   | 0 | Valido | 0 |
-| OR | 1 | Valore dello Span minore del limite calcolato in base alla tolleranza | 128 |
-| OR | 2 | Valore dello Span maggiore del limite calcolato in base alla tolleranza | 256 |
-| OR | 4 | Valore dello Zero minore del limite calcolato in base alla tolleranza | 32 |
-| OR | 8 | Valore dello Zero maggiore del limite calcolato in base alla tolleranza | 64 |
-| OR | 16 | Calibrazione | 8 |
-| OR | 32 | Libero |   |
-| OR | 64 | Libero |   |
-| OR | 128 | Misura non valida causa numero di letture inferiore a quello impostato | 16 |
-| OR | 256 | Errore strumentale | 512 |
-| OR | 512 | Misura compresa tra + e – detection limit | 2 |
-| OR | 1024 | Misura inferiore a - detection limit | 512 |
-| OR | 2048 | Misura istantanea inferiore al minimo ammesso | 4 |
-| OR | 4096 | Misura istantanea superiore al massimo ammesso | 4 |
-| OR | 8192 | Misura istantanea oltre la variazione ammessa | 4 |
-|   |   |   |   |
-
-<br>
-
-#### Codici di validazione sistema centrale
-
-
-|   |   |   |
-| - | - | - |
-|   | <b>Descrizione</b> | <b>CalcCode</b> |
-|   | Codici validi | 0 |
-| OR | Invalido da sistema, valido per utente | 1 |
-| OR | Dato invalidato per errore, rivalidato | 2 |
-|   | Codici non validi |   |
-| OR | Da verificare | 4 |
-| OR | Taratura | 8 |
-| OR | Numero letture insufficiente rispetto al valore impostato | 16 |
-| OR | Zero low | 32 |
-| OR | Zero high | 64 |
-| OR | Span low | 128 |
-| OR | Span high | 256 |
-| OR | Dati non attendibili | 512 |
-| OR | Media minore del Detection Limit | 1024 |
-|   |   |   |
+<table>
+<thead>
+  <tr>
+    <th >DL</th>
+    <th >Descrizione</th>
+    <th >CED</th>
+    <th >Descrizione</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td >0</td>
+    <td >Valido</td>
+    <td >0</td>
+    <td >Valido</td>
+  </tr>
+  <tr>
+    <td >1</td>
+    <td >Valore dello Span minore del limite calcolato in base alla tolleranza</td>
+    <td  rowspan="4">-16</td>
+    <td >Span low</td>
+  </tr>
+  <tr>
+    <td >2</td>
+    <td >Valore dello Span maggiore del limite calcolato in base alla tolleranza</td>
+    <td >Span high</td>
+  </tr>
+  <tr>
+    <td >4</td>
+    <td >Valore dello Zero minore del limite calcolato in base alla tolleranza</td>
+    <td >Zero low</td>
+  </tr>
+  <tr>
+    <td >8</td>
+    <td >Valore dello Zero maggiore del limite calcolato in base alla tolleranza</td>
+    <td >Zero high</td>
+  </tr>
+  <tr>
+    <td >16</td>
+    <td >Calibrazione</td>
+    <td >2</td>
+    <td >Taratura</td>
+  </tr>
+  <tr>
+    <td >32</td>
+    <td >Manutenzione Ordinaria</td>
+    <td  rowspan="2">-64</td>
+    <td  rowspan="2">Invalido utente/manutentore</td>
+  </tr>
+  <tr>
+    <td >64</td>
+    <td >Manutenzione Straordinaria</td>
+  </tr>
+  <tr>
+    <td >128</td>
+    <td ><span style="font-weight:400;font-style:normal">Misura non valida causa numero di letture inferiore a quello impostato</span></td>
+    <td >-4</td>
+    <td >Non valido per numero letture insufficiente</td>
+  </tr>
+  <tr>
+    <td >256</td>
+    <td >Errore strumentale</td>
+    <td >-32</td>
+    <td >Non valido errore software/stazione</td>
+  </tr>
+  <tr>
+    <td >512</td>
+    <td >Misura compresa tra + e – detection limit</td>
+    <td >4</td>
+    <td >&lt; Detection Limit e sostituito dal sistema con DL/2</td>
+  </tr>
+  <tr>
+    <td >1024</td>
+    <td >Misura inferiore a - detection limit</td>
+    <td ></td>
+    <td >Dati non attendibili</td>
+  </tr>
+  <tr>
+    <td >2048</td>
+    <td >Misura istantanea inferiore al minimo ammesso</td>
+    <td  rowspan="3">4</td>
+    <td  rowspan="3"><span>&lt; Detection Limit e sostituito dal sistema con DL/2</span></td>
+  </tr>
+  <tr>
+    <td >4096</td>
+    <td ><span>Misura istantanea superiore al massimo ammesso</span></td>
+  </tr>
+  <tr>
+    <td >8192</td>
+    <td >Misura istantanea oltre la variazione ammessa</td>
+  </tr>
+</tbody>
+</table>
 
 <br>
 <br>
