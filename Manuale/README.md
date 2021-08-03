@@ -814,7 +814,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
   </tr>
   <tr>
     <td >128</td>
-    <td ><span style="font-weight:400;font-style:normal">Misura non valida causa numero di letture inferiore a quello impostato</span></td>
+    <td ><span style="font-weight:400;font-style:normal">Misura non valida causa numero di letture inferiore al 75% di copertura</span></td>
     <td >-4</td>
     <td >Non valido per numero letture insufficiente</td>
   </tr>
@@ -833,14 +833,14 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
   <tr>
     <td >1024</td>
     <td >Misura inferiore a - detection limit</td>
-    <td ></td>
+    <td >-8</td>
     <td >Dati non attendibili</td>
   </tr>
   <tr>
     <td >2048</td>
     <td >Misura istantanea inferiore al minimo ammesso</td>
-    <td  rowspan="3">4</td>
-    <td  rowspan="3"><span>&lt; Detection Limit e sostituito dal sistema con DL/2</span></td>
+    <td  rowspan="3">-2</td>
+    <td  rowspan="3"><span>Non valido per validazione automatica (allarmi bloccanti)</span></td>
   </tr>
   <tr>
     <td >4096</td>
@@ -852,6 +852,16 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
   </tr>
 </tbody>
 </table>
+
+### 5.2 Codici di stazione
+
+| DL | Descrizione | CED | Descrizione |
+| - | - | - | - |
+| 0 | Situazione normale e funzionante, senza anomalie | 0 | Valido |
+| 1 | Errore generico software | 0 | Valido |
+| 2 | Riavvio del sistema | 0 | Valido |
+| 4 | Spazio insufficiente su disco | 0 | Valido |
+|  |  |  |  |
 
 <br>
 <br>
@@ -981,9 +991,9 @@ Il calcolo del limite di rilevabilità viene eseguito sulla base della media ora
 | C | codice di validità |
 |   |   |
 
-Se X < DL e X > - DL allora X = DL/2 ed il codice di validità viene impostato a 512 (Misura compresa tra + e – detection limite)
+Se X < DL e X > -DL allora X = DL/2 ed il codice di validità viene impostato a 512 (Misura compresa tra + e – detection limit), dato valido
 
-Se X < - DL allora il codice di validità viene impostato a 1024 (Misura inferiore a - detection limit)
+Se X < -DL allora il codice di validità viene impostato a 1024 (Misura inferiore a - detection limit), dato non valido
 
 <br>
 <br>
