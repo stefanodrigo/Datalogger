@@ -166,7 +166,6 @@ Dopo ciascun *****singolo ciclo di acquisizioni elementari*****, l'insieme dei d
 | <b>dati_moduli</b> | Viene salvato uno snapshot dei moduli e dei dati utilizzato al successivo riavvio, se non superiore al valore della variabile “dati-moduli-ritardo” configurata nel file INI |
 | <b>log</b> | Files di log, con tutte le operazioni svolte dal software |
 | <b>pipe</b> | Contiene dei files utilizzati in lettura dai moduli virtuali che utilizzano come    fonte dati le “pipe” |
-|   |   |
 
 <br>
 
@@ -180,7 +179,6 @@ Dopo ciascun *****singolo ciclo di acquisizioni elementari*****, l'insieme dei d
 | <b>files_medie_csv</b> | Dati mediati di tutti i parametri in formato CSV |
 | <b>files_medie_dat</b> | Dati mediati di tutti i parametri in formato ASCII (usato dal CED) |
 | <b>files_tarature_dat</b> | Dati delle tarature in formato ASCII (usato dal CED) |
-|   |   |
 
 <br>
 
@@ -213,7 +211,6 @@ Descrizione delle voci del menu<br>
 | Affianca verticalmente | Affianca verticalmente le finestre aperte (identico a Finestre verticali) |
 | <u>*****?*****</u> |   |
 | Informazioni … | Informazioni su OPAS-TOOLS |
-|   |   |
 
 <br>
 
@@ -236,7 +233,6 @@ Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le propr
 | Formato nome file | Formato del nome del file per il centro, se solo HEADER, crea un file univoco in append |
 | <u>*****Avanzate*****</u> |   |
 | Crea files pipes (Slave) | Crea i files dati per alimentare le pipes usate da una seconda istanza del software, modalità Slave |
-|   |   |
 
 <br>
 
@@ -272,7 +268,6 @@ In seguito *****selezionare lo strumento che si vuole configurare*****, comparir
 | Numero porta TCP | Numero porta TCP della socket |
 | <u>*****Comunicazione filesystem*****</u> |   |
 | Nome del file dati | Nome del file dati esterno da utilizzare come pipe in input |
-|   |   |
 
 <br>
 
@@ -307,7 +302,6 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 | Percentuale minima letture | Percentuale minima numero di misure valide (75%) |
 | Valore massimo | Massimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
 | Valore minimo | Minimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
-|   |   |
 
 <br>
 
@@ -342,7 +336,6 @@ Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/0
 | c) Contatto valvola di Span | Contatto valvola di Span su scheda ADAM 40xx |
 | ID modulo i/o | ID del modulo i/o (4060/6068) |
 | Utilizza banco di calibrazione | Utilizza banco di calibrazione composto da tre elettrovalvole o contatti i/o dello strumento |
-|   |   |
 
 <br>
 
@@ -365,7 +358,6 @@ Per eliminare la taratura cliccare su Elimina
 | Salva configurazione | Salva le modifiche fatte |
 | Salva configurazione con nome | Salva la configurazione con un altro nome |
 | Nuova configurazione | Genera una nuova configurazione vuota nella quale aggiungere in seguito i moduli/strumenti necessari |
-|   |   |
 
 <br>
 
@@ -386,7 +378,6 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 | - | - |
 | Imposta posizione (ordine) | Imposta gli ID dei moduli secondo la posizione attuale |
 | Imposta tempo di interrogazione | Imposta il tempo (in secondi) di interrogazione dei moduli (eccetto i diagnostici) |
-|   |   |
 
 <br>
 
@@ -402,7 +393,6 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 | Imposta diagnostici minimo percentuale dati | Imposta il valore minimo dei dati in percentuale |
 | Imposta gli ID progressivi | Imposta gli ID progressivi secondo l’ordine visivo |
 | Imposta gli ID e DatabaseID progressivi (Non diagnostici) | Imposta gli ID ed i DatabaseID progressivi.<br> *****Da non usare con una configurazione con i DatabaseID già impostati secondo il database del CED!***** |
-|   |   |
 
 <br>
 
@@ -452,7 +442,6 @@ Verrà mostrato il *****grafico***** e la *****tabella dei dati***** riferita al
 | Massimo | Valore massimo rilevato durante l’ora di acquisizione |
 | Codice | Codice di validità (vedi capitolo 6.1) |
 | Percentuale | Percentuale di dati validi durante l’ora di rilevazione |
-|   |   |
 
 <br>
 
@@ -487,7 +476,6 @@ Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relati
 | Tolleranza | Valore di tolleranza riferito al parametro e alla modalità (ZERO o SPAN) |
 | Risultato | Risultato della calibrazione basato sulla modalità<br>ZERO: OK, ZERO LOW, ZERO HIGH<br>SPAN: OK, SPAN LOW, SPAN HIGH |
 | Valore | Valore restituito come risultato della calibrazione |
-|   |   |
 
 <br>
 <br>
@@ -534,7 +522,6 @@ Lista degli strumenti e parametri in polling con visualizzazione dei dati princi
 | Errate | Numero di misure errate |
 | Codice | Codice di validità (vedi capitolo 6.1) |
 | Taratura | Fase della taratura, zero, span, purge |
-|   |   |
 
 <br>
 
@@ -561,7 +548,6 @@ Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli o
 | Letture | Numero di misure totali |
 | Errate | Numero di misure errate |
 | Codice | Codice di validità (vedi capitolo 6.1) |
-|   |   |
 
 <br>
 
@@ -588,7 +574,6 @@ Lista degli allarmi
 | Letture | Numero di misure totali |
 | Errate | Numero di misure errate |
 | Codice | Codice di validità (vedi capitolo 6.1) |
-|   |   |
 
 <br>
 
@@ -611,7 +596,6 @@ Lista dei parametri in taratura
 | Data fine | Data fine calibrazione manuale o automatica |
 | Fase | Indica se il parametro è in uno stato di Zero, Span o Purge (tempo di stabilizzazione) |
 | Automatica | Checkbox per verificare se la taratura è automatica |
-|   |   |
 
 <br>
 
@@ -661,7 +645,6 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 | Stazione | Stazione di riferimento del programma utile in caso di OPAS DL multipli |
 | Configurazione | File di configurazione in uso |
 | Data | Data e ora correnti |
-|   |   |
 
 <br>
 
@@ -680,7 +663,6 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 | Visualizza file di log | Visualizza il contenuto del file di log scelto in base alla data |
 | Visualizza configurazione | Visualizza la configurazione in uso in un modulo in sola lettura (vedi “4.4 Visualizza configurazione”) |
 | Esci |   |
-|   |   |
 
 <br>
 
@@ -696,7 +678,6 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 | Visualizza storici tarature | Vedi “3.3 File > Tarature” |
 | Riavvia OPAS-DL | Esegue il riavvio del programma |
 | Aggiorna OPAS-DL | Esegue l’aggiornamento del programma |
-|   |   |
 
 <br>
 
@@ -712,7 +693,6 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 | Sovrapponi | Sovrappone le finestre |
 | Affianca verticalmente | Le affianca verticalmente |
 | Affianca orizzontalmente | Le affianca orizzontalmente |
-|   |   |
 
 <br>
 
@@ -725,7 +705,6 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 | - | - |
 | Changelog | File contenente le modifiche apportate ad ogni aggiornamento del software |
 | Informazioni … | Informazioni sul software e la sua versione |
-|   |   |
 
 <br>
 
@@ -749,7 +728,6 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 | - | - |
 | Tarature | Vedi “3.3 File > Tarature” |
 | Annulla tarature attive | Elimina tutte le tarature attive |
-|   |   |
 
 <br>
 <br>
@@ -765,7 +743,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
     <th >DL</th>
     <th >Descrizione</th>
     <th >CED</th>
-    <th >Descrizione</th>
+    <th >Stato</th>
   </tr>
 </thead>
 <tbody>
@@ -779,34 +757,34 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
     <td >1</td>
     <td >Valore dello Span minore del limite calcolato in base alla tolleranza</td>
     <td  rowspan="4">-16</td>
-    <td >Span low</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >2</td>
     <td >Valore dello Span maggiore del limite calcolato in base alla tolleranza</td>
-    <td >Span high</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >4</td>
     <td >Valore dello Zero minore del limite calcolato in base alla tolleranza</td>
-    <td >Zero low</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >8</td>
     <td >Valore dello Zero maggiore del limite calcolato in base alla tolleranza</td>
-    <td >Zero high</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >16</td>
     <td >Calibrazione</td>
     <td >2</td>
-    <td >Taratura</td>
+    <td >Valido</td>
   </tr>
   <tr>
     <td >32</td>
     <td >Manutenzione Ordinaria</td>
     <td  rowspan="2">-64</td>
-    <td  rowspan="2">Invalido utente/manutentore</td>
+    <td  rowspan="2">Non valido</td>
   </tr>
   <tr>
     <td >64</td>
@@ -816,31 +794,31 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
     <td >128</td>
     <td ><span style="font-weight:400;font-style:normal">Misura non valida causa numero di letture inferiore al 75% di copertura</span></td>
     <td >-4</td>
-    <td >Non valido per numero letture insufficiente</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >256</td>
-    <td >Errore strumentale</td>
+    <td >Errore dello strumento letto dal flag di status</td>
     <td >-32</td>
-    <td >Non valido errore software/stazione</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >512</td>
     <td >Misura compresa tra + e – detection limit</td>
     <td >4</td>
-    <td >&lt; Detection Limit e sostituito dal sistema con DL/2</td>
+    <td >Valido</td>
   </tr>
   <tr>
     <td >1024</td>
     <td >Misura inferiore a - detection limit</td>
     <td >-8</td>
-    <td >Dati non attendibili</td>
+    <td >Non valido</td>
   </tr>
   <tr>
     <td >2048</td>
     <td >Misura istantanea inferiore al minimo ammesso</td>
-    <td  rowspan="3">-2</td>
-    <td  rowspan="3"><span>Non valido per validazione automatica (allarmi bloccanti)</span></td>
+    <td  rowspan="3">/</td>
+    <td  rowspan="3"><span>Da definire</span></td>
   </tr>
   <tr>
     <td >4096</td>
@@ -860,8 +838,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 | 0 | Situazione normale e funzionante, senza anomalie | 0 | Valido |
 | 1 | Errore generico software | 0 | Valido |
 | 2 | Riavvio del sistema | 0 | Valido |
-| 4 | Spazio insufficiente su disco | 0 | Valido |
-|  |  |  |  |
+| 4 | Spazio su disco in esaurimento | 0 | Valido |
 
 <br>
 <br>
@@ -886,7 +863,6 @@ Di seguito un *****esempio di file di configurazione del software***** ed una de
 | “seconda-istanza” | Se impostato a false è possibile eseguire una sola istanza del programma |
 | “livello-log” | Determina la verbosità del log del software |
 | “configurazione” | Nome della configurazione salvata nella directory “config” |
-|   |   |
 
 [Opzioni]
 ; visualizza l'applicazione a schermo intero
@@ -989,7 +965,6 @@ Il calcolo del limite di rilevabilità viene eseguito sulla base della media ora
 | DL | detection limit |
 | X | valore della media oraria |
 | C | codice di validità |
-|   |   |
 
 Se X < DL e X > -DL allora X = DL/2 ed il codice di validità viene impostato a 512 (Misura compresa tra + e – detection limit), dato valido
 
