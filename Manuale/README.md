@@ -8,7 +8,7 @@
 
 ## Open Air System
 
-*****Progetto Open Source***** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
+***Progetto Open Source*** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
 
 ##### Aggiornato a gennaio 2020
 
@@ -81,34 +81,34 @@
 
 ## PREMESSA
 
-*****OPAS DL è un sistema completo***** per l'acquisizione, l'elaborazione statistica e la trasmissione dei dati ed il controllo della strumentazione in stazioni automatiche per il *****rilevamento di dati meteorologici e atmosferici***** (es. stazioni multiple su di una stessa piattaforma Hardware o software dedicati per l’acquisizione di dati in formati diversi da quelli standard).
+***OPAS DL è un sistema completo*** per l'acquisizione, l'elaborazione statistica e la trasmissione dei dati ed il controllo della strumentazione in stazioni automatiche per il ***rilevamento di dati meteorologici e atmosferici*** (es. stazioni multiple su di una stessa piattaforma Hardware o software dedicati per l’acquisizione di dati in formati diversi da quelli standard).
 
-Essendo *****strutturato in modo totalmente modulare*****, risulta liberamente espandibile sul piano hardware e configurabile in base alle necessità applicative.
+Essendo ***strutturato in modo totalmente modulare***, risulta liberamente espandibile sul piano hardware e configurabile in base alle necessità applicative.
 
-Il *****salvataggio dei dati provenienti dalla strumentazione***** di ogni stazione viene effettuato tramite dei file CSV organizzati in directory mensili e giornaliere.
+Il ***salvataggio dei dati provenienti dalla strumentazione*** di ogni stazione viene effettuato tramite dei file CSV organizzati in directory mensili e giornaliere.
 
 In modalità debug il software salva ogni singola operazione effettuata ed ogni dato ricevuto dai moduli (Strumenti e Moduli I/O) in files di log, utilizzabili in caso di problemi per diagnosticarne le cause.
 
-Il sistema permette *****l’interfacciamento analogico, seriale ed ethernet con strumenti di ultima generazione*****. In questo modo è possibile acquisire tutti i più importanti segnali diagnostici, oltre ai comuni segnali di misura e di allarme.
+Il sistema permette ***l’interfacciamento analogico, seriale ed ethernet con strumenti di ultima generazione***. In questo modo è possibile acquisire tutti i più importanti segnali diagnostici, oltre ai comuni segnali di misura e di allarme.
 
-OPAS DL è un sistema progettato per assolvere ad alcune funzioni fondamentali nel campo della *****gestione automatica del rilevamento e del controllo della qualità dell'aria*****, nello specifico:
+OPAS DL è un sistema progettato per assolvere ad alcune funzioni fondamentali nel campo della ***gestione automatica del rilevamento e del controllo della qualità dell'aria***, nello specifico:
 
 
 
 * *Acquisizione dati*
 
-  Ad intervalli regolari, programmabili a partire da un secondo, vengono acquisiti tutti i dati relativi ai canali analogici seriali e digitali collegati. *****L'acquisizione dei segnali con la frequenza prestabilita***** non viene mai interrotta e continua anche durante altre attività ed il telecontrollo;
+  Ad intervalli regolari, programmabili a partire da un secondo, vengono acquisiti tutti i dati relativi ai canali analogici seriali e digitali collegati. ***L'acquisizione dei segnali con la frequenza prestabilita*** non viene mai interrotta e continua anche durante altre attività ed il telecontrollo;
 * *Post-elaborazione*
 
-  I dati acquisiti vengono trattati con riferimento ai diversi criteri di validazione (condizioni di allarme, superamento di soglie prefissate ecc.) ed *****utilizzati per aggiornare la statistica in via di formazione***** (valori minimo, medio, massimo, deviazione standard, codice di validità). Il tempo di integrazione è programmabile a partire da 1 minuto
+  I dati acquisiti vengono trattati con riferimento ai diversi criteri di validazione (condizioni di allarme, superamento di soglie prefissate ecc.) ed ***utilizzati per aggiornare la statistica in via di formazione*** (valori minimo, medio, massimo, deviazione standard, codice di validità). Il tempo di integrazione è programmabile a partire da 1 minuto
 * *Memorizzazione*
 
-  Tutti i dati statistici relativi al tempo di integrazione impostato, vengono *****memorizzati in files con formato ASCII***** per l’export via FTP;
+  Tutti i dati statistici relativi al tempo di integrazione impostato, vengono ***memorizzati in files con formato ASCII*** per l’export via FTP;
 * *Configurazione*
 
-  Il sistema può acquisire dati da canali analogici e digitali tramite schede dedicate e strumenti con uscita seriale ed ethernet. Per *****ciascun canale***** sono configurabili una serie di informazioni utilizzate per la validazione dei canali analogici sono liberamente configurabili dall'operatore; sono altresì configurabili alcuni parametri generali, di uso comune ai vari canali, quali il tempo di campionamento dei segnali, il tempo di mediazione, i parametri relativi alle porte RS232 ecc.
+  Il sistema può acquisire dati da canali analogici e digitali tramite schede dedicate e strumenti con uscita seriale ed ethernet. Per ***ciascun canale*** sono configurabili una serie di informazioni utilizzate per la validazione dei canali analogici sono liberamente configurabili dall'operatore; sono altresì configurabili alcuni parametri generali, di uso comune ai vari canali, quali il tempo di campionamento dei segnali, il tempo di mediazione, i parametri relativi alle porte RS232 ecc.
 
-Il *****sistema presenta inoltre le seguenti ulteriori caratteristiche per lo scarico dati*****:
+Il ***sistema presenta inoltre le seguenti ulteriori caratteristiche per lo scarico dati***:
 
 * Possibilità di *collegamento via connessione*:
   * ADSL con velocità variabile a seconda del provider e del servizio;
@@ -126,28 +126,28 @@ Sincronizzazione orologio calendario con il centro;
 
 ### 1.1 Avvio del sistema
 
-All'accensione il *****sistema attiva automaticamente la procedura di acquisizione*****, trattamento e memorizzazione dati, secondo la configurazione impostata nel relativo file.<br>
-Questo garantisce *****l’avviamento automatico del sistema***** dopo ogni eventuale interruzione nella erogazione della energia elettrica.<br>
-Dopo ogni riavvio il sistema *****si trova in uno stato di WARM-UP*****, per un tempo prestabilito in fase di configurazione.
+All'accensione il ***sistema attiva automaticamente la procedura di acquisizione***, trattamento e memorizzazione dati, secondo la configurazione impostata nel relativo file.<br>
+Questo garantisce ***l’avviamento automatico del sistema*** dopo ogni eventuale interruzione nella erogazione della energia elettrica.<br>
+Dopo ogni riavvio il sistema ***si trova in uno stato di WARM-UP***, per un tempo prestabilito in fase di configurazione.
 
 ### 1.2 Manipolazione dei dati acquisiti
 
-Dopo ciascuna campionatura del segnale analogico o digitale, il sistema esegue la *****conversione della misura nella unità ingegneristica***** fissata e la validazione della misura con verifica dei seguenti parametri:
+Dopo ciascuna campionatura del segnale analogico o digitale, il sistema esegue la ***conversione della misura nella unità ingegneristica*** fissata e la validazione della misura con verifica dei seguenti parametri:
 
 * Limiti di campo di misura minimo/massimo;
 * Limiti di variazione tra due acquisizioni;
 * Presenza di allarmi nell'analizzatore;
 
-Nei casi di *****entrata o uscita da una situazione di allarme*****, il sistema provvede a memorizzare l'evento in un file di Log.
+Nei casi di ***entrata o uscita da una situazione di allarme***, il sistema provvede a memorizzare l'evento in un file di Log.
 
-Sia la *****frequenza di acquisizione del dato***** che i parametri per le verifiche di validità sono trattati come grandezze variabili, lette da un file di configurazione JSON, specifiche per ogni singolo canale di misura.<br>
-I *****parametri di configurazione sono leggibili***** e/o modificabili sia localmente che da un centro remoto collegato in rete.
+Sia la ***frequenza di acquisizione del dato*** che i parametri per le verifiche di validità sono trattati come grandezze variabili, lette da un file di configurazione JSON, specifiche per ogni singolo canale di misura.<br>
+I ***parametri di configurazione sono leggibili*** e/o modificabili sia localmente che da un centro remoto collegato in rete.
 
-*****L’applicativo elabora i dati elementari*****, per la formazione dei valori medi e dei codici di validità, con tempo di integrazione programmabile; vengono inoltre calcolati i valori minimo, massimo, la deviazione standard e la percentuale di dati validi.<br>
-L’applicativo provvede alla *****creazione dei file ASCII per l’export dati***** via FTP e provvederà a creare un archivio compresso qualora l’utente lo preveda.<br>
-Dopo ciascun *****singolo ciclo di acquisizioni elementari*****, l'insieme dei dati contenuti nella finestra viene aggiornati e trascorso un tempo pari al tempo di integrazione prefissato in configurazione, il sistema memorizza nei file giornalieri tutti *****i dati contenuti nella schermata***** e ricomincia una nuova serie di acquisizioni, previa inizializzazione delle variabili.
+***L’applicativo elabora i dati elementari***, per la formazione dei valori medi e dei codici di validità, con tempo di integrazione programmabile; vengono inoltre calcolati i valori minimo, massimo, la deviazione standard e la percentuale di dati validi.<br>
+L’applicativo provvede alla ***creazione dei file ASCII per l’export dati*** via FTP e provvederà a creare un archivio compresso qualora l’utente lo preveda.<br>
+Dopo ciascun ***singolo ciclo di acquisizioni elementari***, l'insieme dei dati contenuti nella finestra viene aggiornati e trascorso un tempo pari al tempo di integrazione prefissato in configurazione, il sistema memorizza nei file giornalieri tutti ***i dati contenuti nella schermata*** e ricomincia una nuova serie di acquisizioni, previa inizializzazione delle variabili.
 
-*****Successivamente al calcolo***** di ogni media, i parametri verranno posti in monitor automaticamente.
+***Successivamente al calcolo*** di ogni media, i parametri verranno posti in monitor automaticamente.
 
 <br>
 <br>
@@ -155,7 +155,7 @@ Dopo ciascun *****singolo ciclo di acquisizioni elementari*****, l'insieme dei d
 
 ## 2 LE DIRECTORY DEL PROGRAMMA
 
-*****Dopo il primo lancio del programma***** vengono create, automaticamente, una serie di directory organizzate in questo modo:
+***Dopo il primo lancio del programma*** vengono create, automaticamente, una serie di directory organizzate in questo modo:
 
 ### 2.1 Directory delle funzionalità di supporto
 
@@ -190,7 +190,7 @@ I file .csv sono scaricabili e visualizzabili all’interno della suite Office (
 
 ## 3 OPAS-TOOLS
 
-Il software OPAS-TOOLS viene utilizzato *****per gestire e creare le configurazioni***** che verranno poi utilizzate dal programma di acquisizione dati OPAS DL. Queste configurazioni sono dei semplici file JSON modificabili con qualsiasi editor di testo. Il programma permette di clonare parametri, strumenti e di auto generare i codici identificativi dei singoli parametri. Vengono inoltre impostati i settaggi delle porte seriali utilizzate per acquisire i dati quali velocità, bauds rate, parità ecc.<br>
+Il software OPAS-TOOLS viene utilizzato ***per gestire e creare le configurazioni*** che verranno poi utilizzate dal programma di acquisizione dati OPAS DL. Queste configurazioni sono dei semplici file JSON modificabili con qualsiasi editor di testo. Il programma permette di clonare parametri, strumenti e di auto generare i codici identificativi dei singoli parametri. Vengono inoltre impostati i settaggi delle porte seriali utilizzate per acquisire i dati quali velocità, bauds rate, parità ecc.<br>
 
 Finestra principale programma<br>
 <img src="img/03.png"></img>
@@ -200,152 +200,21 @@ Descrizione delle voci del menu<br>
 
 |   |   |
 | - | - |
-| <u>*****File*****</u> |   |
-| Configurazione | Apre finestra di gesione delle configurazioni |
-| Tarature | Apre finestra dei dati delle tarature |
-| Grafici | Apre finestra di visualizzazione grafici |
+| <u>***File***</u> | <img src="img/03a.png"></img> |
+| Configurazione | Apre finestra di gesione delle configurazioni (vedi *3.1 File > Configurazione*) |
+| Tarature | Apre finestra dei dati delle tarature *3.2 File > Tarature*) |
+| Grafici | Apre finestra di visualizzazione grafici *3.3 File > Grafici*) |
 | Esci | Chiude OPAS-TOOLS |
-| <u>*****Finestre verticali*****</u> |   |
-| <u>*****Finestre*****</u> |   |
+| <u>***Finestre verticali***</u> |   |
+| <u>***Finestre***</u> |   |
 | Sovrapponi | Sovrappone le finistre aperte |
 | Affianca verticalmente | Affianca verticalmente le finestre aperte (identico a Finestre verticali) |
-| <u>*****?*****</u> |   |
+| <u>***?***</u> |   |
 | Informazioni … | Informazioni su OPAS-TOOLS |
 
 <br>
 
-Ogni qualvolta una configurazione viene salvata il programma mantiene uno storico delle modifiche in modo da poter recuperare una configurazione funzionante in caso di problemi.<img src="img/04.png"></img>
-
-Occorre *****modificare tutti i parametri necessari***** al fine di configurare al meglio la strumentazione.<br>
-Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le proprietà. Salvare la configurazione a fine lavoro.
-
-<img src="img/05.png"></img>
-
-
-|   |   |
-| - | - |
-| <u>*****Configurazione*****</u> |   |
-| Header file dati | Header dei file dati per il centro (in minuscolo e senza spazi) |
-| Id stazione | Id univoco della stazione usato nel database del centro (1000) |
-| Nome del datalogger | Nome del datalogger, qualsiasi testo |
-| <u>*****Dati*****</u> |   |
-| Crea file compresso | Crea un file dati per il centro compresso |
-| Formato nome file | Formato del nome del file per il centro, se solo HEADER, crea un file univoco in append |
-| <u>*****Avanzate*****</u> |   |
-| Crea files pipes (Slave) | Crea i files dati per alimentare le pipes usate da una seconda istanza del software, modalità Slave |
-
-<br>
-
-In seguito *****selezionare lo strumento che si vuole configurare*****, compariranno le seguenti impostazioni da inserire:
-
-<img src="img/06.png"></img>
-
-
-|   |   |
-| - | - |
-| <u>*****Principali*****</u> |   |
-| ID modulo prog. | ID univoco del modulo, progressivo |
-| Modulo attivo | Modulo attivo si/no |
-| Tipo comunicazione | Comunicazione modulo, seriale, tcpip ecc... |
-| Tipologia | Tipologia modulo |
-| <u>*****Proprietà*****</u> |   |
-| Frequenza relativa diagnostici (x) | Frequenza scansione dei diagnostici rispetto alla scansione principale, da eseguire ogni x letture |
-| Frequenza scansione modulo | Frequenza scansione del modulo in secondi |
-| Indirizzo | Indirizzo del modulo, se utilizzato (1, 2, ...) |
-| Informazioni modulo | Informazioni modulo, diagnostici ecc... |
-| Modulo temporaneo | Se il modulo è temporaneo non salva la media per il CED, utile per strumenti temporanei |
-| Nome modulo | Nome modulo |
-| Posizione | Posizione – ordinamento del modulo |
-| Timeout | Timeout risposta dallo strumento in millisecondi |
-| <u>*****Comunicazione seriale*****</u> |   |
-| Bauds rate | Bauds porta seriale |
-| Data bits | Data bits porta seriale |
-| Parità | Parità porta seriale |
-| Porta seriale | Nome porta seriale (COM1, COM2, ...) |
-| Stop bits | Stop bits porta seriale |
-| <u>*****Comunicazione ethernet*****</u> |   |
-| Indirizzo IP | Indirizzo IP dello strumento |
-| Numero porta TCP | Numero porta TCP della socket |
-| <u>*****Comunicazione filesystem*****</u> |   |
-| Nome del file dati | Nome del file dati esterno da utilizzare come pipe in input |
-
-<br>
-
-Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti proprietà:
-
-<img src="img/07.png"></img>
-
-
-|   |   |
-| - | - |
-| <u>*****Principali*****</u> |   |
-| Canale attivo | Canale attivo si/no |
-| ID canale prog. | Id univoco del canale, progressivo |
-| Intervallo media | Intervallo della media in secondi |
-| Salve letture in CSV | Salva tutte le singole letture (valori istantanei) in un file CSV |
-| <u>*****Database*****</u> |   |
-| ID database | ID univoco del canale utilizzato dal database per identificare il parametro |
-| <u>*****Proprietà*****</u> |   |
-| Algoritmo | Algoritmo di misura del canale (media, somma, ecc) |
-| Decimali | Numero decimali per l’arrotondamento |
-| Detection limit | Detection limit del parametro, il valore mediato verrà salvato pari alla metà del valore impostato C |
-| Espressione regolare | Espressione regolare utilizzata per estrarre il valore dalla risposta dello strumento |
-| Formula | Formula correttiva da applicare al valore grezzo |
-| Indice array dei dati | Indice nell’array dei dati acquisiti dal modulo con primo elemento pari a 0 |
-| Indirizzo | Indirizzo/Etichette/ID del canale, usato per diagnostici, BTX, SRI e Modbus. L’etichetta corrisponde al nome nel file RES |
-| Nome canale | Nome del canale |
-| Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
-| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare |
-| Unità di misura | Unità di misura del parametro |
-| <u>*****Filtri*****</u> |   |
-| Minima media ammessa | Minimo valore mediato accettato, oltre al quale il dato viene automaticamente invalidato |
-| Percentuale minima letture | Percentuale minima numero di misure valide (75%) |
-| Valore massimo | Massimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
-| Valore minimo | Minimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
-
-<br>
-
-Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/08.png"></img> e compariranno le seguenti proprietà della taratura:
-
-<img src="img/09.png"></img>
-
-
-|   |   |
-| - | - |
-| <u>*****Principali*****</u> |   |
-| Attiva | Taratura attiva si /no |
-| Automatica | Taratura automatica si/no |
-| Data fine taratura | Data fine taratura |
-| Data inizio taratura | Data inizio taratura |
-| Finestra ore attive | Ore in cui effettuare la taratura |
-| Tempo di stabilizzazione (min) | Tempo di stabilizzazione della misura dopo lo Span in minuti |
-| Tempo minimo runtime (ore) | Tempo minimo di runtime del programma a seguito di un riavvio del sistema (mancanza corrente) in ore |
-| Tempo ripetizione ciclica (ore) | Tempo ripetizioni ciclica se diverso da zero in ore |
-| <u>*****Zero*****</u> |   |
-| Durata lettura di Zero (min) | Tempo durata lettura di Zero in minuti |
-| Stabilizzazione dello Zero (min) | Tempo di stabilizzazione dello Zero in minuti |
-| Valore di riferimento Zero () (unità ing.) | Valore di riferimento Zero (unità ing.) |
-| <u>*****Span*****</u> |   |
-| Duranta lettura di Span (min) | Tempo durata lettura di Span in minuti |
-| Stabilizzazione dello Span (min) | Tempo di stabilizzazione dello Span in minuti |
-| Tolleranza Span (%) | Tolleranza del valore di Span in percentuale |
-| Valore di riferimento Span | Valore di riferimento Span (unità ing.) |
-| <u>*****Banco calibrazione*****</u> |   |
-| a) Contatto valvola di Sample | Contatto valvola di Sample su scheda ADAM 40xx (0 per disabilitare) |
-| b) Contatto valvola di Zero | Contatto valvola di Zero su scheda ADAM 40xx |
-| c) Contatto valvola di Span | Contatto valvola di Span su scheda ADAM 40xx |
-| ID modulo i/o | ID del modulo i/o (4060/6068) |
-| Utilizza banco di calibrazione | Utilizza banco di calibrazione composto da tre elettrovalvole o contatti i/o dello strumento |
-
-<br>
-
-Per eliminare la taratura cliccare su Elimina
-
-<img src="img/10.png"></img>
-
-<br>
-
-### 3.1 File > Configurazione
+### <a id="tools-config" />3.1 File > Configurazione</a>
 
 #### Menu ‘File’
 
@@ -357,6 +226,7 @@ Per eliminare la taratura cliccare su Elimina
 | Apri configurazione | Permette di selezionare una configurazione da modificare |
 | Salva configurazione | Salva le modifiche fatte |
 | Salva configurazione con nome | Salva la configurazione con un altro nome |
+| Esporta configurazione per CED | Esporta la configurazione in un formate testuale (txt) e, al momento attuale, la salva negli appunti |
 | Nuova configurazione | Genera una nuova configurazione vuota nella quale aggiungere in seguito i moduli/strumenti necessari |
 
 <br>
@@ -376,6 +246,7 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 |   |   |
 | - | - |
+| Imposta ID progressivi | Utilizzato come riferimento per i moduli di taratura |
 | Imposta posizione (ordine) | Imposta gli ID dei moduli secondo la posizione attuale |
 | Imposta tempo di interrogazione | Imposta il tempo (in secondi) di interrogazione dei moduli (eccetto i diagnostici) |
 
@@ -388,50 +259,188 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 |   |   |
 | - | - |
-| Imposta decimali | Imposta i decimali di tutti i parametri in base alla sotto selezione del menù |
-| Imposta media | Imposta lo stesso tempo di integrazione a tutti i parametri in secondi |
-| Imposta diagnostici minimo percentuale dati | Imposta il valore minimo dei dati in percentuale |
+| Imposta decimali | Imposta i decimali di tutti i parametri in base alla sotto selezione del menù <br><img src="img/14a.png"></img> |
+| Imposta media | Imposta lo stesso tempo di integrazione a tutti i parametri in secondi <br><img src="img/14b.png"></img> |
+| Imposta diagnostici minimo percentuale dati | Imposta il valore minimo dei dati in percentuale <br><img src="img/14c.png"></img> |
 | Imposta gli ID progressivi | Imposta gli ID progressivi secondo l’ordine visivo |
-| Imposta gli ID e DatabaseID progressivi (Non diagnostici) | Imposta gli ID ed i DatabaseID progressivi.<br> *****Da non usare con una configurazione con i DatabaseID già impostati secondo il database del CED!***** |
+| Imposta gli ID e DatabaseID progressivi (Tranne diagnostici) | Imposta gli ID ed i DatabaseID progressivi fatta eccezione per i diagnostici<br> ***Da non usare con una configurazione con i DatabaseID già impostati secondo il database del CED!*** |
+| Imposta gli ID e DatabaseID progressivi (Tutti)  | Imposta gli ID ed i DatabaseID progressivi |
+| Imposta i diagnostici | Per i diagnostici, il salvataggio dei dati in CSV è disabilitato di default (*False*) <br><img src="img/14d.png"></img> |
 
 <br>
 
-### 3.2 File > Grafici
+#### Configurazione
+
+Ogni qualvolta una configurazione viene salvata il programma mantiene uno storico delle modifiche in modo da poter recuperare una configurazione funzionante in caso di problemi.<img src="img/04.png"></img>
+
+Occorre ***modificare tutti i parametri necessari*** al fine di configurare al meglio la strumentazione.<br>
+Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le proprietà. Salvare la configurazione a fine lavoro.
+
+<img src="img/05.png"></img>
+
+|   |   |
+| - | - |
+| <u>***Configurazione***</u> |   |
+| Header file dati | Header dei file dati per il centro (ammessi caratteri minuscoli, numeri,  tratto alto -, tratto basso _ ) |
+| Nome del datalogger | Nome del datalogger, qualsiasi testo |
+| <u>***Dati***</u> |   |
+| Crea file compresso | Crea un file dati per il centro compresso |
+| Formato nome file | Formato del nome del file per il centro, se solo HEADER, crea un file univoco in append |
+| <u>***Avanzate***</u> |   |
+| Crea files pipes (Slave) | Crea i files dati per alimentare le pipes usate da una seconda istanza del software, modalità Slave |
+
+<br>
+
+In seguito ***selezionare lo strumento che si vuole configurare***, compariranno le seguenti impostazioni da inserire:
+
+<img src="img/06.png"></img>
+
+
+|   |   |
+| - | - |
+| <u>***Principali***</u> |   |
+| ID modulo prog. | ID univoco del modulo, progressivo |
+| Modulo attivo | Modulo attivo si/no |
+| Tipo comunicazione | Comunicazione modulo, seriale, tcpip ecc... |
+| Tipologia | Tipologia modulo |
+| <u>***Proprietà***</u> |   |
+| Frequenza relativa diagnostici (x) | Frequenza scansione dei diagnostici rispetto alla scansione principale, da eseguire ogni x letture |
+| Frequenza scansione modulo | Frequenza scansione del modulo in secondi |
+| Indirizzo | Indirizzo del modulo, se utilizzato (1, 2, ...) |
+| Informazioni modulo | Informazioni modulo, diagnostici ecc... |
+| Modulo temporaneo | Se il modulo è temporaneo non salva la media per il CED, utile per strumenti temporanei |
+| Nome modulo | Nome modulo |
+| Posizione | Posizione – ordinamento del modulo |
+| Shift dati (min) | Tempo di shift in minuti rispetto alla media oraria dei dati acquisiti (usato per GC866)  |
+| Slot | Posizione dello slot in cui è inserito il modulo (usato per ADAM 5000 ; primo slot = 1) |
+| Timeout | Timeout risposta dallo strumento in millisecondi |
+| <u>***Comunicazione seriale***</u> |   |
+| Bauds rate | Bauds porta seriale |
+| Data bits | Data bits porta seriale |
+| Parità | Parità porta seriale |
+| Porta seriale | Nome porta seriale (COM1, COM2, ...) |
+| Stop bits | Stop bits porta seriale |
+| <u>***Comunicazione ethernet***</u> |   |
+| Indirizzo IP | Indirizzo IP dello strumento |
+| Numero porta TCP | Numero porta TCP della socket |
+| <u>***Comunicazione filesystem***</u> |   |
+| Genera errore se manca il file | Genera errore se manca il file, se impostato a *True* verrà incrementato il conteggio delle letture errate; (da impostare a *False* nel caso di SRI con una sola lettura nella mezz'ora) |
+| Nome del file dati | Nome del file dati esterno da utilizzare come pipe in input |
+
+<br>
+
+Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti proprietà:
+
+<img src="img/07.png"></img>
+
+
+|   |   |
+| - | - |
+| <u>***Principali***</u> |   |
+| Canale attivo | Canale attivo si/no |
+| ID canale prog. | Id univoco del canale, progressivo |
+| Intervallo media | Intervallo della media in secondi |
+| Salve letture in CSV | Salva tutte le singole letture (valori istantanei) in un file CSV |
+| <u>***Database***</u> |   |
+| ID database | ID univoco del canale utilizzato dal database per identificare il parametro |
+| <u>***Proprietà***</u> |   |
+| Algoritmo | Algoritmo di misura del canale (media, somma, ecc) |
+| Decimali | Numero decimali per l’arrotondamento |
+| Detection limit | Detection limit del parametro, il valore mediato verrà salvato pari alla metà del valore impostato C |
+| Espressione regolare | Espressione regolare utilizzata per estrarre il valore dalla risposta dello strumento |
+| Formula | Formula correttiva da applicare al valore grezzo |
+| <a id="for-val-der" />Formula valore derivato | Formula per calcolare il dato finale partendo da due canali del modulo; ad esempio canali #1 e #2 => y=x1-x2 |
+| Indice array dei dati | Indice nell’array dei dati acquisiti dal modulo con primo elemento pari a 0 |
+| Indirizzo | Indirizzo/Etichette/ID del canale, usato per diagnostici, BTX, SRI e Modbus. L’etichetta corrisponde al nome nel file RES |
+| Nome canale | Nome del canale |
+| Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
+| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
+| Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der))<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- CalibrationResult (utilizzato per il risultato delle tarature del GC866)|
+| Unità di misura | Unità di misura del parametro |
+| <u>***Filtri***</u> |   |
+| Minima media ammessa | Minimo valore mediato accettato, oltre al quale il dato viene automaticamente invalidato |
+| Percentuale minima letture | Percentuale minima numero di misure valide (75%) |
+| Valore massimo | Massimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
+| Valore minimo | Minimo valore istantaneo accettato, oltre al quale viene scartato dalla media |
+
+<br>
+
+Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/08.png"></img> e compariranno le seguenti proprietà della taratura:
+
+<img src="img/09.png"></img>
+
+
+|   |   |
+| - | - |
+| <u>***Principali***</u> |   |
+| Attiva | Taratura attiva si /no |
+| Automatica | Taratura automatica si/no |
+| Data fine taratura | Data fine taratura |
+| Data inizio taratura | Data inizio taratura |
+| Finestra ore attive | Ore in cui effettuare la taratura |
+| Tempo di stabilizzazione (min) | Tempo di stabilizzazione della misura dopo lo Span in minuti |
+| Tempo minimo runtime (ore) | Tempo minimo di runtime del programma a seguito di un riavvio del sistema (mancanza corrente) in ore |
+| Tempo ripetizione ciclica (ore) | Tempo ripetizioni ciclica se diverso da zero in ore |
+| <u>***Zero***</u> |   |
+| Durata lettura di Zero (min) | Tempo durata lettura di Zero in minuti |
+| Stabilizzazione dello Zero (min) | Tempo di stabilizzazione dello Zero in minuti |
+| Valore di riferimento Zero () (unità ing.) | Valore di riferimento Zero (unità ing.) |
+| <u>***Span***</u> |   |
+| Duranta lettura di Span (min) | Tempo durata lettura di Span in minuti |
+| Shift risultato (min) | Tempo di shift in minuti del risultato di span esposto sul protocollo MODBUS (usato per GC866) |
+| Stabilizzazione dello Span (min) | Tempo di stabilizzazione dello Span in minuti |
+| Tolleranza Span (%) | Tolleranza del valore di Span in percentuale |
+| Valore di riferimento Span | Valore di riferimento Span (unità ing.) |
+| <u>***Banco taratura***</u> |   |
+| Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO |
+| Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN |
+|| <img src="img/09a.png"></img> <img src="img/09b.png"></img> |
+| ID modulo i/o | ID del modulo i/o (4060/6068) |
+| Utilizza banco di taratura | Utilizza banco di taratura composto da elettrovalvole pilotate da contatti i/o dei moduli ADAM 4000/5000<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- None (nessun banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OnlyBench (solo banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- InstrumentAndBench (invio comando allo strumento e gestione banco di taratura) |
+
+<br>
+
+Per eliminare la taratura cliccare su Elimina
+
+<img src="img/10.png"></img>
+
+
+### <a id="tools-grafici" />3.2 File > Grafici</a>
 
 Maschera per analizzare lo storico dei dati acquisiti nella stazione, aprendo una configurazione è possibile caricare i dati storici di ogni parametro e visualizzarli sia come grafico che come tabella.<br>
-Cliccare su *****Apri configurazione***** per selezionare la configurazione desiderata
+Cliccare su ***Apri configurazione*** per selezionare la configurazione desiderata
 
 <img src="img/15.png"></img>
 
-Verranno visualizzati gli strumenti disponibili, *****selezionare lo strumento***** interessato
+Verranno visualizzati gli strumenti disponibili, ***selezionare lo strumento*** interessato
 
 <img src="img/16.png"></img>
 
-Dopo aver selezionato lo strumento *****selezionare, attraverso le checkbox, il parametro, o i parametri*****, di cui si vuole generare il grafico tra quelli visualizzati nell’apposito riquadro:
+Dopo aver selezionato lo strumento ***selezionare, attraverso le checkbox, il parametro, o i parametri***, di cui si vuole generare il grafico tra quelli visualizzati nell’apposito riquadro:
 
 <img src="img/17.png"></img>
 
-*****Selezionare le date***** di inizio e di fine tenendo presente che non è consentito avere un intervallo di date maggiore ai 6 mesi
+***Selezionare le date*** di inizio e di fine tenendo presente che non è consentito avere un intervallo di date maggiore ai 6 mesi
 
 <img src="img/18.png"></img>
 
-Se si dovesse accidentalmente selezionare un intervallo di date superiore ai 6 mesi verrà mostrato un *****messaggio di avviso*****
+Se si dovesse accidentalmente selezionare un intervallo di date superiore ai 6 mesi verrà mostrato un ***messaggio di avviso***
 
 <img src="img/19.png"></img>
 
-L’opzione *****Asse Y zero automatico***** è utile per posizionare il grafico con il valore minimo a 0 sull’asse delle Y, se non selezionata il grafico verrà centrato automaticamente in base ai valori rilevati
+L’opzione ***Asse Y zero automatico*** è utile per posizionare il grafico con il valore minimo a 0 sull’asse delle Y, se non selezionata il grafico verrà centrato automaticamente in base ai valori rilevati
 
 <img src="img/20.png"></img>
 
 Cliccare il pulsante <img src="img/21.png"></img> per visualizzare il grafico e i dati del parametro selezionato nel range di date indicato, nel caso di modifiche alle impostazioni selezionate in precedenza si dovrà cliccare nuovamente sul pulsante per aggiornare il grafico
 
-Verrà mostrato il *****grafico***** e la *****tabella dei dati***** riferita allo stesso
+Verrà mostrato il ***grafico*** e la ***tabella dei dati*** riferita allo stesso
 
 <img src="img/22.png"></img>
 
 <img src="img/23.png"></img>
 
-*****Il significato delle colonne del quadro è il seguente:*****
+***Il significato delle colonne del quadro è il seguente:***
 
 
 |   |   |
@@ -445,37 +454,37 @@ Verrà mostrato il *****grafico***** e la *****tabella dei dati***** riferita al
 
 <br>
 
-### 3.3 File > Tarature
+### <a id="tools-tarature" />3.3 File > Tarature</a>
 
-Maschera per analizzare i risultati acquisiti durante la calibrazione degli strumenti, aprendo una configurazione è possibile visualizzarne i dati nella tabella<br>
-Cliccare su *****Apri configurazione***** per selezionare la configurazione desiderata
+Maschera per analizzare i risultati acquisiti durante la taratura degli strumenti, aprendo una configurazione è possibile visualizzarne i dati nella tabella<br>
+Cliccare su ***Apri configurazione*** per selezionare la configurazione desiderata
 
 <img src="img/24.png"></img>
 
-*****Selezionare le date***** di inizio e di fine tenendo presente che non è consentito avere un intervallo di date maggiore ai 6 mesi
+***Selezionare le date*** di inizio e di fine tenendo presente che non è consentito avere un intervallo di date maggiore ai 6 mesi
 
 <img src="img/25.png"></img>
 
-Se si dovesse accidentalmente selezionare un intervallo di date superiore ai 6 mesi verrà mostrato un *****messaggio di avviso*****
+Se si dovesse accidentalmente selezionare un intervallo di date superiore ai 6 mesi verrà mostrato un ***messaggio di avviso***
 
 <img src="img/26.png"></img>
 
-Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relativi ai risultati delle calibrazioni di tutti i parametri attivi relativi alla configurazione selezionata
+Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relativi ai risultati delle tarature di tutti i parametri attivi relativi alla configurazione selezionata
 
 <img src="img/28.png"></img>
 
-*****Il significato delle colonne del quadro è il seguente:*****
+***Il significato delle colonne del quadro è il seguente:***
 
 
 |   |   |
 | - | - |
 | Data | Data e ora di acquisizione del dato |
-| Parametro | Nome del parametro oggetto della calibrazione |
-| Modalità | Modalità di calibrazione del parametro ZERO o SPAN |
-| Tipo calibrazione | Specifica la tipologia di calibrazione se automatica o manuale |
+| Parametro | Nome del parametro oggetto della taratura |
+| Modalità | Modalità di taratura del parametro ZERO o SPAN |
+| Tipo taratura | Specifica la tipologia di taratura se automatica o manuale |
 | Tolleranza | Valore di tolleranza riferito al parametro e alla modalità (ZERO o SPAN) |
-| Risultato | Risultato della calibrazione basato sulla modalità<br>ZERO: OK, ZERO LOW, ZERO HIGH<br>SPAN: OK, SPAN LOW, SPAN HIGH |
-| Valore | Valore restituito come risultato della calibrazione |
+| Risultato | Risultato della taratura basato sulla modalità<br>ZERO: OK, ZERO LOW, ZERO HIGH<br>SPAN: OK, SPAN LOW, SPAN HIGH |
+| Valore | Valore restituito come risultato della taratura |
 
 <br>
 <br>
@@ -483,14 +492,16 @@ Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relati
 
 ## 4 OPAS DL
 
-Il software OPAS DL viene utilizzato *****per acquisire i dati***** utilizzando una configurazione creata con OPAS TOOL.
+<img src="img/88.png"></img> 
+
+Il software OPAS DL viene utilizzato ***per acquisire i dati*** utilizzando una configurazione creata con OPAS TOOL.
 Al primo avvio crea in automatico la struttura delle directory necessarie al corretto funzionamento del sistema.
 
 <br>
 
-### 4.1 Software di acquisizione
+### Software di acquisizione
 
-Il programma è stato creato con una *****interfaccia principale che racchiude le diverse finestre***** per praticità di utilizzo. Il modulo principale racchiude tre schede: principali, diagnostici, tarature che vengono descritti qui di seguito.
+Il programma è stato creato con una ***interfaccia principale che racchiude le diverse finestre*** per praticità di utilizzo. Il modulo principale racchiude tre schede: principali, diagnostici, tarature che vengono descritti qui di seguito.
 
 Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia presente la linea relativa al proprio file di configurazione:
 
@@ -498,157 +509,11 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### 4.1.1 Principali
+### 4.1 Form contenitore
 
-Lista degli strumenti e parametri in polling con visualizzazione dei dati principali, aggiornati ad ogni ciclo
+<img src="img/89.png"></img>
 
-<img src="img/30.png"></img>
-
-*****Il significato delle colonne del quadro è il seguente:*****
-
-
-|   |   |
-| - | - |
-| Modulo | Nome del modulo/strumento |
-| Comunicazione | Proprietà porta seriale o connessione ethernet |
-| Canale | Nome canale o parametri |
-| Unità | Unità di misura |
-| Grezzo | Valore grezzo acquisito dallo strumento |
-| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
-| Media | Media dei valori acquisiti |
-| Massimo | Massimo valore acquisito |
-| Minimo | Minimo valore acquisito |
-| Letture | Numero di misure totali |
-| Errate | Numero di misure errate |
-| Codice | Codice di validità (vedi capitolo 6.1) |
-| Taratura | Fase della taratura, zero, span, purge |
-
-<br>
-
-#### 4.1.2 Diagnostici
-
-Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli operativi
-
-<img src="img/31.png"></img>
-
-*****Il significato delle colonne del quadro è il seguente:*****
-
-
-|   |   |
-| - | - |
-| Modulo | Nome del modulo/strumento |
-| Comunicazione | Proprietà porta seriale o connessione ethernet |
-| Canale | Nome canale o parametri |
-| Unità | Unità di misura |
-| Grezzo | Valore grezzo acquisito dallo strumento |
-| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
-| Media | Media dei valori acquisiti |
-| Massimo | Massimo valore acquisito |
-| Minimo | Minimo valore acquisito |
-| Letture | Numero di misure totali |
-| Errate | Numero di misure errate |
-| Codice | Codice di validità (vedi capitolo 6.1) |
-
-<br>
-
-#### 4.1.3 Allarmi
-
-Lista degli allarmi
-
-<img src="img/32.png"></img>
-
-*****Il significato delle colonne del quadro è il seguente:*****
-
-
-|   |   |
-| - | - |
-| Modulo | Nome del modulo/strumento |
-| Comunicazione | Proprietà porta seriale o connessione ethernet |
-| Canale | Nome canale o parametri |
-| Unità | Unità di misura |
-| Grezzo | Valore grezzo acquisito dallo strumento |
-| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
-| Media | Media dei valori acquisiti |
-| Massimo | Massimo valore acquisito |
-| Minimo | Minimo valore acquisito |
-| Letture | Numero di misure totali |
-| Errate | Numero di misure errate |
-| Codice | Codice di validità (vedi capitolo 6.1) |
-
-<br>
-
-#### 4.1.4 Tarature
-
-Lista dei parametri in taratura
-
-<img src="img/33.png"></img>
-
-*****Il significato delle colonne del quadro è il seguente:*****
-
-
-|   |   |
-| - | - |
-| Modulo | Nome del modulo |
-| Data inizio | Data inizio calibrazione manuale o automatica |
-| Zero | Tempo di lettura, tempo di stabilizzazione, percentuale tolleranza e valore di defect |
-| Span | Tempo di lettura, tempo di stabilizzazione, percentuale tolleranza e valore di defect |
-| Stabiliz. | Tempo finale di stabilizzazione (purge) |
-| Data fine | Data fine calibrazione manuale o automatica |
-| Fase | Indica se il parametro è in uno stato di Zero, Span o Purge (tempo di stabilizzazione) |
-| Automatica | Checkbox per verificare se la taratura è automatica |
-
-<br>
-
-### 4.2 Visualizzazione grafica
-
-<img src="img/34.png"></img>
-
-Il modulo dei grafici *****permette di plottare in tempo reale i dati acquisiti dagli strumenti*****. E’ possibile impostare il tipo delle scale, dell’area dei grafici, il tempo di durata dell’asse delle date e la selezione di parametri da visualizzare. Cliccare su “Attivo” per iniziare ad acquisire i dati.
-
-<img src="img/35.png"></img>
-
-<br>
-
-### 4.3 Visualizzazione tabellare
-
-<img src="img/36.png"></img>
-
-Il modulo visualizzazione dati *****utilizza una tabella aggiornata in tempo reale*****. Come per i grafici si possono selezione di parametri da visualizzare. Cliccare su “Attivo” per iniziare ad acquisire i dati.
-
-<br>
-
-### 4.4 Visualizza configurazione
-
-<img src="img/37.png"></img>
-
-Il modulo “Visualizza configurazione” permette di *****visualizzare la configurazione della stazione*****, ma in sola modalità di lettura.
-
-<br>
-
-### 4.5 Impostazioni > Tarature
-
-<img src="img/38.png"></img>
-
-Il modulo Tarature permette di *****gestire le calibrazioni manuali ed automatiche dell’acquisitore*****. Selezionando uno strumento dalla lista si può aggiungere una taratura programmata, impostandone la tipologia (Zero o Span), i tempi di durata della stabilizzazione, dei cicli di zero e span e la data/ora di esecuzione della taratura. Nel caso di taratura automatica questa verrà posticipata in automatico del numero di ore impostato nel campo di ripetizione ciclica.
-
-<img src="img/39.png"></img>
-
-<br>
-
-### 4.6 Barra inferiore
-
-Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seguenti parametri:
-
-
-|   |   |
-| - | - |
-| Stazione | Stazione di riferimento del programma utile in caso di OPAS DL multipli |
-| Configurazione | File di configurazione in uso |
-| Data | Data e ora correnti |
-
-<br>
-
-### 4.7 Menu principale
+### 4.1.1 I menu
 
 #### Menu ‘File’
 
@@ -658,11 +523,13 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 |   |   |
 | - | - |
 | Visualizza eventi applicazione | Visualizza gli eventi registrati nei files di log |
-| Visualizza dati in tempo reale | Apre il modulo dei dati istantanei |
-| Visualizza grafici in tempo reale | Apre il modulo dei grafici in real time |
-| Visualizza file di log | Visualizza il contenuto del file di log scelto in base alla data |
-| Visualizza configurazione | Visualizza la configurazione in uso in un modulo in sola lettura (vedi “4.4 Visualizza configurazione”) |
-| Esci |   |
+| Visualizza dati in tempo reale | Apre il modulo dei dati istantanei (vedi [*Visualizzazione tabellare*](#visual-tabellare)) |
+| Visualizza grafici in tempo reale | Apre il modulo dei grafici in real time (vedi [*Visualizzazione grafica*](#visual-grafica)) |
+| Visualizza configurazione | Visualizza la configurazione in uso in un modulo in sola lettura (vedi [*Visualizza configurazione*](#visual-config)) |
+| Visualizza file di log | Visualizza il contenuto del file di log scelto in base alla data <br><img src="img/90.png"></img> |
+| Apri file di log in Notepad | Visualizza il contenuto del file di log nell'applicazione Notepad <br><img src="img/40a.png"></img> |
+| Apri coda file di log (PS) | Visualizza la coda del file di log, in continuo aggiornamento, all'interno di una finestra Windows Powershell <br><img src="img/40b.png"></img> |
+| Esci | Chiude l'applicazione OPAS-DL |
 
 <br>
 
@@ -673,9 +540,9 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 
 |   |   |
 | - | - |
-| Modifica configurazione | Vedi “3.1 File > Configurazione” |
-| Visualizza storici grafici | Vedi “3.2 File > Grafici” |
-| Visualizza storici tarature | Vedi “3.3 File > Tarature” |
+| Modifica configurazione | Vedi [*3.1 File > Configurazione*](#tools-config) |
+| Visualizza storici grafici | Vedi [*3.2 File > Grafici*](#tools-grafici) |
+| Visualizza storici tarature | Vedi [*3.3 File > Tarature*](#tools-tarature) |
 | Riavvia OPAS-DL | Esegue il riavvio del programma |
 | Aggiorna OPAS-DL | Esegue l’aggiornamento del programma |
 
@@ -703,12 +570,31 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 
 |   |   |
 | - | - |
-| Changelog | File contenente le modifiche apportate ad ogni aggiornamento del software |
-| Informazioni … | Informazioni sul software e la sua versione |
+| Changelog | File contenente le modifiche apportate ad ogni aggiornamento del software <br><img src="img/43a.png"></img> |
+| Informazioni … | Informazioni sul software e la sua versione <br><img src="img/43b.png"></img> |
 
 <br>
 
-### 4.8 Menu secondario
+
+#### Barra inferiore
+
+<img src="img/87.png"></img> 
+
+Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seguenti parametri:
+
+|   |   |
+| - | - |
+| Stazione | Stazione di riferimento del programma utile in caso di OPAS DL multipli |
+| Configurazione | File di configurazione in uso |
+| Data | Data e ora correnti |
+
+<br>
+
+### 4.2 Acquisizione dati
+
+<img src="img/30.png"></img> 
+
+### 4.2.1 I menu
 
 #### Menu ‘Acquisizione’
 
@@ -719,19 +605,176 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 <br>
 
-#### Menu ‘Tarature’
+#### Menu ‘Impostazioni’
 
 <img src="img/45.png"></img>
+
+|   |   |
+| - | - |
+| Tarature | Vedi [*Visualizzazione tarature*](#visual-tarature) |
+| Annulla tarature attive | Elimina tutte le tarature attive |
+
+### <a id="visual-tarature" />Visualizzazione tarature</a>
+
+<img src="img/38.png"></img>
+
+Il modulo Tarature permette di ***gestire le tarature manuali ed automatiche dell’acquisitore***. Selezionando uno strumento dalla lista si può aggiungere una taratura programmata, impostandone la tipologia (Zero o Span), i tempi di durata della stabilizzazione, dei cicli di zero e span e la data/ora di esecuzione della taratura. Nel caso di taratura automatica questa verrà posticipata in automatico del numero di ore impostato nel campo di ripetizione ciclica.
+
+<img src="img/39.png"></img>
+
+<br>
+
+### 4.2.2 I tab
+
+#### <a id="principali" />Tab 'Principali'</a>
+
+Lista degli strumenti e parametri in polling con visualizzazione dei dati principali, aggiornati ad ogni ciclo
+
+<img src="img/30.png"></img>
+
+***Il significato delle colonne del quadro è il seguente:***
 
 
 |   |   |
 | - | - |
-| Tarature | Vedi “3.3 File > Tarature” |
-| Annulla tarature attive | Elimina tutte le tarature attive |
+| Modulo | Nome del modulo/strumento |
+| Comunicazione | Proprietà porta seriale o connessione ethernet |
+| Canale | Nome canale o parametri |
+| Unità | Unità di misura |
+| Grezzo | Valore grezzo acquisito dallo strumento |
+| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
+| Media | Media dei valori acquisiti |
+| Massimo | Massimo valore acquisito |
+| Minimo | Minimo valore acquisito |
+| Letture | Numero di misure totali |
+| Errate | Numero di misure errate |
+| Codice | Codice di validità (vedi capitolo 6.1) |
+| Taratura | Fase della taratura, zero, span, purge |
 
 <br>
+
+Cliccando con il tasto destro del mouse sull'header di una riga (prima colonna della tabella, quella a sinistra di "Modulo") è possibile impostare uno stato o una taratura al modulo corrispondente. Inoltre è possibile anche reperire l'indirizzo IP e le info del modulo selezionato.
+Verrà associata un'icona alla riga in base all'azione selezionata:
+
+<img src="img/94.png"></img>
+
+|   |   |
+| - | - |
+| Stato modulo | Stato del modulo <br><img src="img/91.png"></img> <br> - Online (default, in acquisizione) <br> - Disattivato (modulo non più in acquisizione, ma non viene variato il codice) <br> - Manutenzione ordinaria (si applica il codice 32) <br> - Manutenzione straordinaria (si applica  il codice 32) |
+| Taratura | Taratura che si vuole applicare <br><img src="img/92.png"></img> <br> - Zero (esegue una taratura di Zero) <br> - Span (esegue una taratura di Span) <br> Una volta terminata la taratura, aprire nuovamente questo menù e cliccare su 'Sample'. Il modulo tornerà ad acquisire normalmente |
+| Varie | In 'Varie' è possibile recuperare l'indirizzo IP e le info del modulo <br><img src="img/93.png"></img> |
+
 <br>
+
+#### <a id="diagnostici" />Tab 'Diagnostici'</a>
+
+Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli operativi
+
+<img src="img/31.png"></img>
+
+***Il significato delle colonne del quadro è il seguente:***
+
+
+|   |   |
+| - | - |
+| Modulo | Nome del modulo/strumento |
+| Comunicazione | Proprietà porta seriale o connessione ethernet |
+| Canale | Nome canale o parametri |
+| Unità | Unità di misura |
+| Grezzo | Valore grezzo acquisito dallo strumento |
+| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
+| Media | Media dei valori acquisiti |
+| Massimo | Massimo valore acquisito |
+| Minimo | Minimo valore acquisito |
+| Letture | Numero di misure totali |
+| Errate | Numero di misure errate |
+| Codice | Codice di validità (vedi capitolo 6.1) |
+
 <br>
+
+#### <a id="allarmi" />Tab 'Allarmi'</a>
+
+Lista degli allarmi
+
+<img src="img/32.png"></img>
+
+***Il significato delle colonne del quadro è il seguente:***
+
+
+|   |   |
+| - | - |
+| Modulo | Nome del modulo/strumento |
+| Comunicazione | Proprietà porta seriale o connessione ethernet |
+| Canale | Nome canale o parametri |
+| Unità | Unità di misura |
+| Grezzo | Valore grezzo acquisito dallo strumento |
+| Istantaneo | Ultimo dato acquisito applicando la formula al valore grezzo |
+| Media | Media dei valori acquisiti |
+| Massimo | Massimo valore acquisito |
+| Minimo | Minimo valore acquisito |
+| Letture | Numero di misure totali |
+| Errate | Numero di misure errate |
+| Codice | Codice di validità (vedi capitolo 6.1) |
+
+<br>
+
+#### <a id="tarature" />Tab 'Tarature'</a>
+
+Lista dei parametri in taratura
+
+<img src="img/33.png"></img>
+
+***Il significato delle colonne del quadro è il seguente:***
+
+
+|   |   |
+| - | - |
+| Modulo | Nome del modulo |
+| Data inizio | Data inizio taratura manuale o automatica |
+| Zero | Tempo di lettura, tempo di stabilizzazione, percentuale tolleranza e valore di defect |
+| Span | Tempo di lettura, tempo di stabilizzazione, percentuale tolleranza e valore di defect |
+| Stabiliz. | Tempo finale di stabilizzazione (purge) |
+| Data fine | Data fine taratura manuale o automatica |
+| Fase | Indica se il parametro è in uno stato di Zero, Span o Purge (tempo di stabilizzazione) |
+| Automatica | Checkbox per verificare se la taratura è automatica |
+
+<br>
+
+
+### 4.3 Eventi applicazione
+
+<img src="img/86.png"></img>
+
+In questa finestra verranno visualizzati tutti gli eventi relativi ai moduli in acquisizione.<br>Cliccando il pulsante 'Pulisci lista' la finestra verrà svuotata di tutti i log. 
+
+### <a id="visual-tabellare" />Visualizzazione tabellare</a>
+
+<img src="img/36.png"></img>
+
+Il modulo visualizzazione dati ***utilizza una tabella aggiornata in tempo reale***. Come per i grafici si possono selezione di parametri da visualizzare. Cliccare su “Attivo” per iniziare ad acquisire i dati.
+
+<br>
+
+
+### <a id="visual-grafica" />Visualizzazione grafica</a>
+
+<img src="img/34.png"></img>
+
+Il modulo dei grafici ***permette di plottare in tempo reale i dati acquisiti dagli strumenti***. E’ possibile impostare il tipo delle scale, dell’area dei grafici, il tempo di durata dell’asse delle date e la selezione di parametri da visualizzare. Cliccare su “Attivo” per iniziare ad acquisire i dati.
+
+<img src="img/35.png"></img>
+
+<br>
+
+
+### <a id="visual-config" />Visualizza configurazione</a>
+
+<img src="img/37.png"></img>
+
+Il modulo “Visualizza configurazione” permette di ***visualizzare la configurazione della stazione***, ma in sola modalità di lettura.
+
+<br>
+
 
 ## 5 APPENDICE A
 
@@ -776,7 +819,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
   </tr>
   <tr>
     <td >16</td>
-    <td >Calibrazione</td>
+    <td >Taratura</td>
     <td >2</td>
     <td >Valido</td>
   </tr>
@@ -850,7 +893,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 #### File “OpasDL.ini”
 
-Di seguito un *****esempio di file di configurazione del software***** ed una descrizione delle varie opzioni.
+Di seguito un ***esempio di file di configurazione del software*** ed una descrizione delle varie opzioni.
 
 
 |   |   |
@@ -978,9 +1021,9 @@ Se X < -DL allora il codice di validità viene impostato a 1024 (Misura inferior
 
 ### 8.1 Caratteristiche hardware
 
-Il sistema OPAS DL è costituito da un *****microcalcolatore per applicazioni di tipo industriale*****, basato su CPU standard e BUS ISA (PC-AT).
+Il sistema OPAS DL è costituito da un ***microcalcolatore per applicazioni di tipo industriale***, basato su CPU standard e BUS ISA (PC-AT).
 
-Essendo *****strutturato in modo totalmente modulare*****, risulta liberamente espandibile sul piano hardware e configurabile in base alle necessità applicative.
+Essendo ***strutturato in modo totalmente modulare***, risulta liberamente espandibile sul piano hardware e configurabile in base alle necessità applicative.
 
 OPAS DL, nella sua configurazione di base, è composto dai seguenti moduli con le caratteristiche minime:
 
@@ -995,7 +1038,7 @@ OPAS DL, nella sua configurazione di base, è composto dai seguenti moduli con l
 * Sistema operativo: WINDOWS 7, WINDOWS 10 32/64 bits;
 * Software di acquisizione dati;
 
-*****Schede Hardware di espansione del sistema:*****
+***Schede Hardware di espansione del sistema:***
 
 * Schede di acquisizione dati:
   * Advantech Serie 4000;
@@ -1009,17 +1052,17 @@ OPAS DL, nella sua configurazione di base, è composto dai seguenti moduli con l
 
 ### 9.1 Setup Windows 10
 
-*****Nome utente*****: Arpa
+***Nome utente***: Arpa
 
-*****Nome PC*****: Arpa_NomeStazione - Psw: nessuna password
+***Nome PC***: Arpa_NomeStazione - Psw: nessuna password
 
-Cortana – digita: *****modifica data e ora*****
+Cortana – digita: ***modifica data e ora***
 Fuso orario: UTC + 1 – Passa automaticamente all’ora legale: DISATTIVATO (no check)
 
-Cortana – digita: *****modifica risparmio energia*****
+Cortana – digita: ***modifica risparmio energia***
 Disattivazione schermo: 1 ora – Sospensione computer: MAI
 
-*****Disattivare l’ibernazione PC*****
+***Disattivare l’ibernazione PC***
 
 1. Fare clic su Start e digitare cmd nella casella Avvia ricerca;
 2. Nell'elenco dei risultati della ricerca fare clic con il pulsante destro del mouse su       Prompt dei comandi, quindi fare clic su Esegui come amministratore;
@@ -1027,7 +1070,7 @@ Disattivazione schermo: 1 ora – Sospensione computer: MAI
 4. Al prompt dei comandi digitare powercfg.exe /hibernate off, quindi premere INVIO;
 5. Digitare exit, quindi premere INVIO per chiudere la finestra del prompt dei comandi.
 
-*****Microsoft Edge (2020 Chromium)*****: installare e applicare la seguente configurazione:
+***Microsoft Edge (2020 Chromium)***: installare e applicare la seguente configurazione:
 
 * “…” in alto a destra;
 * “Impostazioni”;
@@ -1047,28 +1090,28 @@ Disattivazione schermo: 1 ora – Sospensione computer: MAI
 * “Gestisci motori di ricerca”;
 * su tutti, meno che su “Google”, cliccare i “…” e selezionare “Rimuovi”;
 
-*****Total commander*****: installa ultima versione a 64bit. Installare solo l’italiano, non altre lingue.
+***Total commander***: installa ultima versione a 64bit. Installare solo l’italiano, non altre lingue.
 
-*****Notepad 3*****: installare da https://www.rizonesoft.com/downloads/notepad3/ > impostazioni di default
+***Notepad 3***: installare da https://www.rizonesoft.com/downloads/notepad3/ > impostazioni di default
 
-*****Teamviewer*****: Scaricare ed installare per scopi privati/non commerciali. Dopo installato vai a Connessione > Imposta accesso automatico: inserire i dati (PC – PASSWORD) e poi ceccare: non desidero creare un account teamviewer adesso.
+***Teamviewer***: Scaricare ed installare per scopi privati/non commerciali. Dopo installato vai a Connessione > Imposta accesso automatico: inserire i dati (PC – PASSWORD) e poi ceccare: non desidero creare un account teamviewer adesso.
 
-*****Anydesk*****: download e lanciare eseguibile senza installazione
+***Anydesk***: download e lanciare eseguibile senza installazione
 
-*****Python*****: scaricare ed installare Python mettendo il check su “Add Python to Path”.
+***Python***: scaricare ed installare Python mettendo il check su “Add Python to Path”.
 
-*****NcFTP*****: installa ultima versione di NcFtp. Scaricare dal sito https://www.ncftp.com/download/ e scaricare da NcFTP Client 3.2.6 for Microsoft Windows.
+***NcFTP***: installa ultima versione di NcFtp. Scaricare dal sito https://www.ncftp.com/download/ e scaricare da NcFTP Client 3.2.6 for Microsoft Windows.
 
-Ricerca – *****impostazioni di Windows Update***** – installare tutti gli aggiornamenti disponibili
+Ricerca – ***impostazioni di Windows Update*** – installare tutti gli aggiornamenti disponibili
 
-*****Disattivare gli aggiornamenti a windows 10*****
+***Disattivare gli aggiornamenti a windows 10***
 Ricerca: cercare cmd.exe;
 Dal prompt dei comandi lanciare: gpedit.msc – si apre una finestra (editor criteri gruppi locali);
 Configurazione Computer > Modelli Amministrativi > Componenti di Windows > Windows Update;
 Doppio click nella parte destra della finestra, su “Configura Aggiornamenti Automatici;
 Spostare la prima spunta su “Attivata” -  dal menu a tendina selezionare la voce “2 – Avviso per download e installazione”. Cliccare su “Ok”
 
-*****Barra delle applicazioni*****:
+***Barra delle applicazioni***:
 Eliminare icone store windows e outlook dalla barra delle applicazioni ed aggiungere Total Commander, Teamviewer e Notepad. Ridurre cortana ad icona tramite tasto destro sulla barra stessa.
 
 <br>
@@ -1113,12 +1156,12 @@ Eliminare icone store windows e outlook dalla barra delle applicazioni ed aggiun
 
    <img src="img/66.png"></img>
 
-* **Header file dati**: è il nome della stazione (deve essere *****minuscolo senza spazi***** con l’indicazione della provincia di appartenenza es: ao_piazza_plouves)
+* **Header file dati**: è il nome della stazione (deve essere ***minuscolo senza spazi*** con l’indicazione della provincia di appartenenza es: ao_piazza_plouves)
 * **Nome del datalogger**: libera scelta<br>
   Lasciare gli altri campi con i valori preimpostati.
 
 9. Salvare la configurazione assegnandole un nome (file di tipo .json).
-10. Inserire nel file OPAS-DL.ini presente nella cartella OPAS il nome della configurazione appena salvata nell’ultima riga del file dove presente il campo ‘*****configurazione=…*****’
+10. Inserire nel file OPAS-DL.ini presente nella cartella OPAS il nome della configurazione appena salvata nell’ultima riga del file dove presente il campo ‘***configurazione=…***’
 11. Creare i moduli per l’acquisizione degli strumenti.
 
     <img src="img/67.png"></img>
