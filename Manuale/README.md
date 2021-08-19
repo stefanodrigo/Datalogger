@@ -1,16 +1,12 @@
-<img src="img/01.png"></img>
-<br>
-<br>
-<br>
 <img src="img/02.png"></img>
 
-# OPAS DL – OPAS TOOL V 1.11 <br> Manuale d’uso
+# OPAS DL – OPAS TOOL V 1.50 <br> Manuale d’uso
 
 ## Open Air System
 
 ***Progetto Open Source*** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
 
-##### Aggiornato a agosto 2021
+##### Ultimo aggiornamento: Agosto 2021
 
 <br>
 <br>
@@ -20,60 +16,91 @@
 
 ### Sommario
 
-0. PREMESSA
+* PREMESSA
+
 1. FUNZIONALITA’ E ACQUISIZIONE
 
-   1.1.    Avvio del sistema<br>
-   1.2.    Manipolazione dei dati acquisiti
+    1.1 Avvio del sistema<br>
+    1.2 Manipolazione dei dati acquisiti
+
 2. LE DIRECTORY DEL PROGRAMMA
 
-   2.1.	Directory delle funzionalità di supporto<br>
-   2.2.	Directory per i dati
-3. OPAS TOOL
+    2.1 Directory delle funzionalità di supporto<br>
+    2.2 Directory per i dati
 
-   3.1.	File > Configurazione<br>
-   3.2.	File > Grafici<br>
-   3.3.	File > Tarature
-4. OPAS DL
+3. OPAS-TOOLS
 
-   4.1.	Software di acquisizione<br>
+    3.1 File > Configurazione<br>
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1.	Principali<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2.	Diagnostici<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.3.	Allarmi<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.4.	Tarature<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *File*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Moduli*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Proprietà Moduli*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Proprietà Canali*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Configurazione<br>
 
-   4.2.	Visualizzazione grafica<br>
-   4.3.	Visualizzazione tabellare<br>
-   4.4.	Visualizza configurazione<br>
-   4.5.	Impostazioni > Tarature<br>
-   4.6.	Barra inferiore<br>
-   4.7.	Il menu principale<br>
-   4.8.	Menu secondario
+    3.2 File > Grafici<br>
+    3.3 File > Tarature
+
+4. OPAS-DL
+
+    Software di acquisizione<br>
+    4.1 Form contenitore<br>
+   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1 I menù<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *File*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Strumenti*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Finestre*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *?*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2 Barra inferiore<br>
+
+    4.2 Acquisizione dati
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 I menù<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Acquisizione*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Impostazioni*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Visualizzazione tarature<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 I tab<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Principali*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Diagnostici*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Allarmi*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Tarature*<br>
+
+    4.3 Eventi applicazione<br>
+   
+    Visualizzazione tabellare<br>
+    Visualizzazione grafica<br>
+    Visualizza configurazione<br>
+
 5. APPENDICE A
 
-   5.1.	Codici di validazione
+    5.1 Codici di validazione
+
 6. APPENDICE B
 
-   6.1.	Opzioni di configurazione del programma
+    6.1 Opzioni di configurazione del programma
+
 7. APPENDICE C
 
-   7.1.	Deviazione standard<br>
-   7.2.	Velocità del vento scalare<br>
-   7.3.	Unità vettoriale media della direzione del vento<br>
-   7.4.	Velocità del vento vettoriale<br>
-   7.5.	Direzione media del vento vettoriale<br>
-   7.6.	Detection limit
+    7.1 Deviazione standard<br>
+    7.2 Velocità del vento scalare<br>
+    7.3 Unità vettoriale media della direzione del vento<br>
+    7.4 Velocità del vento vettoriale<br>
+    7.5 Direzione media del vento vettoriale<br>
+    7.6 Detection limit
+
 8. APPENDICE D
 
-   8.1.	Caratteristiche hardware
+    8.1 Caratteristiche hardware
+
 9. APPENDICE E
 
-   9.1.	Setup Windows 10
+    9.1 Setup Windows 10
+
 10. APPENDICE F
 
-    10.1.	Setup DataLogger<br>
-    10.2.	Eccezione OPAS relativa a Windows Defender
+    10.1 Setup DataLogger<br>
+    10.2 Eccezione OPAS relativa a Windows Defender
 
 <br>
 <br>
@@ -288,6 +315,8 @@ Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le propr
 | Formato nome file | Formato del nome del file per il centro, se solo HEADER, crea un file univoco in append |
 | <u>***Avanzate***</u> |   |
 | Crea files pipes (Slave) | Crea i files dati per alimentare le pipes usate da una seconda istanza del software, modalità Slave |
+| <u>***Proprietà***</u> |   |
+| Minimo spazio disco libero | Minimo spazio libero sul disco C: (GB) sotto il quale viene impostato l'alarme "Spazio disco in esaurimento" |
 
 <br>
 
@@ -490,7 +519,7 @@ Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relati
 <br>
 <br>
 
-## 4 OPAS DL
+## 4 OPAS-DL
 
 <img src="img/88.png"></img> 
 
