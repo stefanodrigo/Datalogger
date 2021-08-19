@@ -1,4 +1,4 @@
-<img src="img/02.png"></img>
+<img src="img/002.png"></img>
 
 # OPAS DL – OPAS TOOL V 1.50 <br> Manuale d’uso
 
