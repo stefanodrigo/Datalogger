@@ -10,7 +10,7 @@
 
 ***Progetto Open Source*** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
 
-##### Aggiornato a gennaio 2020
+##### Aggiornato a agosto 2021
 
 <br>
 <br>
