@@ -20,7 +20,7 @@
 
 1. FUNZIONALITA’ E ACQUISIZIONE
 
-    1.1 Avvio del sistema<br>
+    [1.1 Avvio del sistema](#11-avvio-del-sistema)<br>
     1.2 Manipolazione dei dati acquisiti
 
 2. LE DIRECTORY DEL PROGRAMMA
