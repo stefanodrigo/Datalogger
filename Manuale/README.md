@@ -1,6 +1,6 @@
-<img src="img/002.png"></img>
+<img src="img/02.png"></img>
 
-# OPAS DL – OPAS TOOL V 1.50 <br> Manuale d’uso
+# OPAS-DL – OPAS-TOOLS V 1.50 <br> Manuale d’uso
 
 ## Open Air System
 
@@ -16,97 +16,97 @@
 
 ### Sommario
 
-* PREMESSA
+* [PREMESSA](#premessa)
 
-1. FUNZIONALITA’ E ACQUISIZIONE
+1. [FUNZIONALITA’ E ACQUISIZIONE](#1-funzionalità-e-acquisizione)
 
-    [1.1 Avvio del sistema](#11-avvio-del-sistema)<br>
-    1.2 Manipolazione dei dati acquisiti
+    1.1 [Avvio del sistema](#11-avvio-del-sistema)<br>
+    1.2 [Manipolazione dei dati acquisiti](#12-manipolazione-dei-dati-acquisiti)
 
-2. LE DIRECTORY DEL PROGRAMMA
+2. [LE DIRECTORY DEL PROGRAMMA](#2-le-directory-del-programma)
 
-    2.1 Directory delle funzionalità di supporto<br>
-    2.2 Directory per i dati
+    2.1 [Directory delle funzionalità di supporto](#21-directory-delle-funzionalità-di-supporto)<br>
+    2.2 [Directory per i dati](#22-directory-per-i-dati)
 
-3. OPAS-TOOLS
+3. [OPAS-TOOLS](#3-opas-tools)
 
-    3.1 File > Configurazione<br>
+    3.1 [File - Configurazione](#31-file---configurazione)<br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *File*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Moduli*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Proprietà Moduli*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Proprietà Canali*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Configurazione<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *File*](#menù-file)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Moduli*](#menù-moduli)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Moduli*](#menù-proprietà-moduli)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Canali*](#menù-proprietà-canali)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione](#configurazione)<br>
 
-    3.2 File > Grafici<br>
-    3.3 File > Tarature
+    3.2 [File - Grafici](#32-file---grafici)<br>
+    3.3 [File - Tarature](#33-file---tarature)
 
-4. OPAS-DL
+4. [OPAS-DL](#4-opas-dl)
 
-    Software di acquisizione<br>
-    4.1 Form contenitore<br>
+    [Software di acquisizione](#software-di-acquisizione)<br>
+    4.1 [Form contenitore](#41-form-contenitore)<br>
    
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1 I menù<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *File*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Strumenti*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Finestre*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *?*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2 Barra inferiore<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1 [I menù](#411-i-menù)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *File*](#menu-file)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Strumenti*](#menù-strumenti)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Finestre*](#menù-finestre)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Help*](#menù-help)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2 [Barra inferiore](#412-barra-inferiore)<br>
 
-    4.2 Acquisizione dati
+    4.2 [Acquisizione dati](#42-acquisizione-dati)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 I menù<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Acquisizione*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Menù *Impostazioni*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Visualizzazione tarature<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 [I menù](#421-i-menù)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Acquisizione*](#menù-acquisizione)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Impostazioni*](#menù-impostazioni)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Visualizzazione tarature](#visualizzazione-tarature)<br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 I tab<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Principali*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Diagnostici*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Allarmi*<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Tab *Tarature*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 [I tab](#422-i-tab)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Principali*](#tab-principali)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Diagnostici*](#tab-diagnostici)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Allarmi*](#tab-allarmi)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Tarature*](#tab-tarature)<br>
 
-    4.3 Eventi applicazione<br>
+    4.3 [Eventi applicazione](#43-eventi-applicazione)<br>
    
-    Visualizzazione tabellare<br>
-    Visualizzazione grafica<br>
-    Visualizza configurazione<br>
+    [Visualizzazione tabellare](#visualizzazione-tabellare)<br>
+    [Visualizzazione grafica](#visualizzazione-grafica)<br>
+    [Visualizza configurazione](#visualizza-configurazione)<br>
 
-5. APPENDICE A
+5. [APPENDICE A](#5-appendice-a)
 
-    5.1 Codici di validazione
+    5.1 [Codici di validazione](#51-codici-di-validazione)
 
-6. APPENDICE B
+6. [APPENDICE B](#6-appendice-b)
 
-    6.1 Opzioni di configurazione del programma
+    6.1 [Opzioni di configurazione del programma](#61-opzioni-di-configurazione-del-programma)
 
-7. APPENDICE C
+7. [APPENDICE C](#7-appendice-c)
 
-    7.1 Deviazione standard<br>
-    7.2 Velocità del vento scalare<br>
-    7.3 Unità vettoriale media della direzione del vento<br>
-    7.4 Velocità del vento vettoriale<br>
-    7.5 Direzione media del vento vettoriale<br>
-    7.6 Detection limit
+    7.1 [Deviazione standard](#71-deviazione-standard)<br>
+    7.2 [Velocità del vento scalare](#72-velocità-del-vento-scalare)<br>
+    7.3 [Unità vettoriale media della direzione del vento](#73-unità-vettoriale-media-della-direzione-del-vento)<br>
+    7.4 [Velocità del vento vettoriale](#74-velocità-del-vento-vettoriale)<br>
+    7.5 [Direzione media del vento vettoriale](#75-direzione-media-del-vento-vettoriale)<br>
+    7.6 [Detection limit](#76-detection-limit)
 
-8. APPENDICE D
+8. [APPENDICE D](#8-appendice-d)
 
-    8.1 Caratteristiche hardware
+    8.1 [Caratteristiche hardware](#81-caratteristiche-hardware)
 
-9. APPENDICE E
+9. [APPENDICE E](#9-appendice-e)
 
-    9.1 Setup Windows 10
+    9.1 [Setup Windows 10](#91-setup-windows-10)
 
-10. APPENDICE F
+10. [APPENDICE F](#10-appendice-f)
 
-    10.1 Setup DataLogger<br>
-    10.2 Eccezione OPAS relativa a Windows Defender
+    10.1 [Setup DataLogger](#101-setup-datalogger)<br>
+    10.2 [Eccezione OPAS relativa a Windows Defender](#102-eccezione-opas-relativa-a-windows-defender)
 
 <br>
 <br>
 <br>
 
-## PREMESSA
+## PREMESSA 
 
 ***OPAS DL è un sistema completo*** per l'acquisizione, l'elaborazione statistica e la trasmissione dei dati ed il controllo della strumentazione in stazioni automatiche per il ***rilevamento di dati meteorologici e atmosferici*** (es. stazioni multiple su di una stessa piattaforma Hardware o software dedicati per l’acquisizione di dati in formati diversi da quelli standard).
 
@@ -149,7 +149,7 @@ Sincronizzazione orologio calendario con il centro;
 <br>
 <br>
 
-## 1 FUNZIONALITA’ E ACQUISIZIONE
+## 1 FUNZIONALITÀ E ACQUISIZIONE 
 
 ### 1.1 Avvio del sistema
 
@@ -180,7 +180,7 @@ Dopo ciascun ***singolo ciclo di acquisizioni elementari***, l'insieme dei dati 
 <br>
 <br>
 
-## 2 LE DIRECTORY DEL PROGRAMMA
+## 2 LE DIRECTORY DEL PROGRAMMA 
 
 ***Dopo il primo lancio del programma*** vengono create, automaticamente, una serie di directory organizzate in questo modo:
 
@@ -241,9 +241,9 @@ Descrizione delle voci del menu<br>
 
 <br>
 
-### <a id="tools-config" />3.1 File > Configurazione</a>
+### 3.1 File - Configurazione
 
-#### Menu ‘File’
+#### Menù *File*
 
 <img src="img/11.png"></img>
 
@@ -258,7 +258,7 @@ Descrizione delle voci del menu<br>
 
 <br>
 
-#### Menu ‘Moduli’
+#### Menù *Moduli*
 
 <img src="img/12.png"></img>
 
@@ -266,7 +266,7 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-#### Menu ‘Proprietà Moduli’
+#### Menù *Proprietà Moduli*
 
 <img src="img/13.png"></img>
 
@@ -279,7 +279,7 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-#### Menu ‘Proprietà Canali’
+#### Menù *Proprietà Canali*
 
 <img src="img/14.png"></img>
 
@@ -434,7 +434,7 @@ Per eliminare la taratura cliccare su Elimina
 <img src="img/10.png"></img>
 
 
-### <a id="tools-grafici" />3.2 File > Grafici</a>
+### 3.2 File - Grafici
 
 Maschera per analizzare lo storico dei dati acquisiti nella stazione, aprendo una configurazione è possibile caricare i dati storici di ogni parametro e visualizzarli sia come grafico che come tabella.<br>
 Cliccare su ***Apri configurazione*** per selezionare la configurazione desiderata
@@ -483,7 +483,7 @@ Verrà mostrato il ***grafico*** e la ***tabella dei dati*** riferita allo stess
 
 <br>
 
-### <a id="tools-tarature" />3.3 File > Tarature</a>
+### 3.3 File - Tarature
 
 Maschera per analizzare i risultati acquisiti durante la taratura degli strumenti, aprendo una configurazione è possibile visualizzarne i dati nella tabella<br>
 Cliccare su ***Apri configurazione*** per selezionare la configurazione desiderata
@@ -519,7 +519,7 @@ Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relati
 <br>
 <br>
 
-## 4 OPAS-DL
+## 4 OPAS-DL 
 
 <img src="img/88.png"></img> 
 
@@ -542,9 +542,9 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <img src="img/89.png"></img>
 
-### 4.1.1 I menu
+### 4.1.1 I menù
 
-#### Menu ‘File’
+#### Menu *File*
 
 <img src="img/40.png"></img>
 
@@ -562,22 +562,22 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### Menu ‘Strumenti’
+#### Menù *Strumenti*
 
 <img src="img/41.png"></img>
 
 
 |   |   |
 | - | - |
-| Modifica configurazione | Vedi [*3.1 File > Configurazione*](#tools-config) |
-| Visualizza storici grafici | Vedi [*3.2 File > Grafici*](#tools-grafici) |
-| Visualizza storici tarature | Vedi [*3.3 File > Tarature*](#tools-tarature) |
+| Modifica configurazione | Vedi [*3.1 File - Configurazione*](#31-file---configurazione) |
+| Visualizza storici grafici | Vedi [*3.2 File - Grafici*](#32-file---grafici) |
+| Visualizza storici tarature | Vedi [*3.3 File - Tarature*](#33-file---tarature) |
 | Riavvia OPAS-DL | Esegue il riavvio del programma |
 | Aggiorna OPAS-DL | Esegue l’aggiornamento del programma |
 
 <br>
 
-#### Menu ‘Finestre’
+#### Menù *Finestre*
 
 <img src="img/42.png"></img>
 
@@ -592,7 +592,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### Menu ‘?’
+#### Menù *Help*
 
 <img src="img/43.png"></img>
 
@@ -605,7 +605,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 <br>
 
 
-#### Barra inferiore
+#### 4.1.2 Barra inferiore
 
 <img src="img/87.png"></img> 
 
@@ -623,9 +623,9 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 
 <img src="img/30.png"></img> 
 
-### 4.2.1 I menu
+### 4.2.1 I menù
 
-#### Menu ‘Acquisizione’
+#### Menù *Acquisizione*
 
 <img src="img/44.png"></img>
 
@@ -634,7 +634,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 <br>
 
-#### Menu ‘Impostazioni’
+#### Menù *Impostazioni*
 
 <img src="img/45.png"></img>
 
@@ -643,7 +643,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 | Tarature | Vedi [*Visualizzazione tarature*](#visual-tarature) |
 | Annulla tarature attive | Elimina tutte le tarature attive |
 
-### <a id="visual-tarature" />Visualizzazione tarature</a>
+### Visualizzazione tarature
 
 <img src="img/38.png"></img>
 
@@ -655,7 +655,7 @@ Il modulo Tarature permette di ***gestire le tarature manuali ed automatiche del
 
 ### 4.2.2 I tab
 
-#### <a id="principali" />Tab 'Principali'</a>
+#### Tab *Principali*
 
 Lista degli strumenti e parametri in polling con visualizzazione dei dati principali, aggiornati ad ogni ciclo
 
@@ -695,7 +695,7 @@ Verrà associata un'icona alla riga in base all'azione selezionata:
 
 <br>
 
-#### <a id="diagnostici" />Tab 'Diagnostici'</a>
+#### Tab *Diagnostici*
 
 Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli operativi
 
@@ -721,7 +721,7 @@ Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli o
 
 <br>
 
-#### <a id="allarmi" />Tab 'Allarmi'</a>
+#### Tab *Allarmi*
 
 Lista degli allarmi
 
@@ -747,7 +747,7 @@ Lista degli allarmi
 
 <br>
 
-#### <a id="tarature" />Tab 'Tarature'</a>
+#### Tab *Tarature*
 
 Lista dei parametri in taratura
 
@@ -776,7 +776,7 @@ Lista dei parametri in taratura
 
 In questa finestra verranno visualizzati tutti gli eventi relativi ai moduli in acquisizione.<br>Cliccando il pulsante 'Pulisci lista' la finestra verrà svuotata di tutti i log. 
 
-### <a id="visual-tabellare" />Visualizzazione tabellare</a>
+### Visualizzazione tabellare
 
 <img src="img/36.png"></img>
 
@@ -785,7 +785,7 @@ Il modulo visualizzazione dati ***utilizza una tabella aggiornata in tempo reale
 <br>
 
 
-### <a id="visual-grafica" />Visualizzazione grafica</a>
+### Visualizzazione grafica
 
 <img src="img/34.png"></img>
 
@@ -796,7 +796,7 @@ Il modulo dei grafici ***permette di plottare in tempo reale i dati acquisiti da
 <br>
 
 
-### <a id="visual-config" />Visualizza configurazione</a>
+### Visualizza configurazione
 
 <img src="img/37.png"></img>
 
@@ -805,7 +805,7 @@ Il modulo “Visualizza configurazione” permette di ***visualizzare la configu
 <br>
 
 
-## 5 APPENDICE A
+## 5 APPENDICE A 
 
 ### 5.1 Codici di validazione
 
@@ -1046,7 +1046,7 @@ Se X < -DL allora il codice di validità viene impostato a 1024 (Misura inferior
 <br>
 <br>
 
-## 8 APPENDICE D
+## 8 APPENDICE D 
 
 ### 8.1 Caratteristiche hardware
 
@@ -1077,7 +1077,7 @@ OPAS DL, nella sua configurazione di base, è composto dai seguenti moduli con l
 <br>
 <br>
 
-## 9 APPENDICE E
+## 9 APPENDICE E 
 
 ### 9.1 Setup Windows 10
 
@@ -1147,7 +1147,7 @@ Eliminare icone store windows e outlook dalla barra delle applicazioni ed aggiun
 <br>
 <br>
 
-## 10 APPENDICE F
+## 10 APPENDICE F 
 
 ### 10.1 Setup DataLogger
 
@@ -1233,3 +1233,6 @@ Per impedire il malfunzionamento del programma OPAS-DL, è necessario generare u
 <br>
 <br>
 <br>
+
+
+##### [Torna all'inizio](#sommario)
