@@ -383,7 +383,7 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 | Indirizzo | Indirizzo/Etichette/ID del canale, usato per diagnostici, BTX, SRI e Modbus. L’etichetta corrisponde al nome nel file RES |
 | Nome canale | Nome del canale |
 | Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
-| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
+| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
 | Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der))<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- CalibrationResult (utilizzato per il risultato delle tarature del GC866)|
 | Unità di misura | Unità di misura del parametro |
 | <u>***Filtri***</u> |   |
@@ -552,9 +552,9 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 |   |   |
 | - | - |
 | Visualizza eventi applicazione | Visualizza gli eventi registrati nei files di log |
-| Visualizza dati in tempo reale | Apre il modulo dei dati istantanei (vedi [*Visualizzazione tabellare*](#visual-tabellare)) |
-| Visualizza grafici in tempo reale | Apre il modulo dei grafici in real time (vedi [*Visualizzazione grafica*](#visual-grafica)) |
-| Visualizza configurazione | Visualizza la configurazione in uso in un modulo in sola lettura (vedi [*Visualizza configurazione*](#visual-config)) |
+| Visualizza dati in tempo reale | Apre il modulo dei dati istantanei (vedi [*Visualizzazione tabellare*](#visualizzazione-tabellare)) |
+| Visualizza grafici in tempo reale | Apre il modulo dei grafici in real time (vedi [*Visualizzazione grafica*](#visualizzazione-grafica)) |
+| Visualizza configurazione | Visualizza la configurazione in uso in un modulo in sola lettura (vedi [*Visualizza configurazione*](#visualizza-configurazione)) |
 | Visualizza file di log | Visualizza il contenuto del file di log scelto in base alla data <br><img src="img/90.png"></img> |
 | Apri file di log in Notepad | Visualizza il contenuto del file di log nell'applicazione Notepad <br><img src="img/40a.png"></img> |
 | Apri coda file di log (PS) | Visualizza la coda del file di log, in continuo aggiornamento, all'interno di una finestra Windows Powershell <br><img src="img/40b.png"></img> |
@@ -640,7 +640,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 |   |   |
 | - | - |
-| Tarature | Vedi [*Visualizzazione tarature*](#visual-tarature) |
+| Tarature | Vedi [*Visualizzazione tarature*](#visualizzazione-tarature) |
 | Annulla tarature attive | Elimina tutte le tarature attive |
 
 ### Visualizzazione tarature
@@ -920,7 +920,7 @@ Il modulo “Visualizza configurazione” permette di ***visualizzare la configu
 
 ### 6.1 Opzioni di configurazione del programma
 
-#### File “OpasDL.ini”
+#### File *OPAS-DL.ini*
 
 Di seguito un ***esempio di file di configurazione del software*** ed una descrizione delle varie opzioni.
 
