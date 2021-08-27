@@ -385,7 +385,7 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 | Indirizzo Modbus | Indirizzo Modbus del canale con i valori di ritorno della taratura (usato per taratura GC866) |
 | Nome canale | Nome del canale |
 | Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
-| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
+| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) |
 | Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der)) |
 | <u>***Filtri***</u> |   |
 | Minima media ammessa | Minimo valore mediato accettato, oltre al quale il dato viene automaticamente invalidato |
