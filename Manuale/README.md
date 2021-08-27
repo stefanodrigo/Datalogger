@@ -58,6 +58,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 [I menù](#421-i-menù)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Acquisizione*](#menù-acquisizione)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Impostazioni*](#menù-impostazioni)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Visualizza*](#menù-visualizza)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Visualizzazione tarature](#visualizzazione-tarature)<br>
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 [I tab](#422-i-tab)<br>
@@ -381,11 +382,11 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 | <a id="for-val-der" />Formula valore derivato | Formula per calcolare il dato finale partendo da due canali del modulo; ad esempio canali #1 e #2 => y=x1-x2 |
 | Indice array dei dati | Indice nell’array dei dati acquisiti dal modulo con primo elemento pari a 0 |
 | Indirizzo | Indirizzo/Etichette/ID del canale, usato per diagnostici, BTX, SRI e Modbus. L’etichetta corrisponde al nome nel file RES |
+| Indirizzo Modbus | Indirizzo Modbus del canale con i valori di ritorno della taratura (usato per taratura GC866) |
 | Nome canale | Nome del canale |
 | Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
 | Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
-| Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der))<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- CalibrationResult (utilizzato per il risultato delle tarature del GC866)|
-| Unità di misura | Unità di misura del parametro |
+| Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der)) |
 | <u>***Filtri***</u> |   |
 | Minima media ammessa | Minimo valore mediato accettato, oltre al quale il dato viene automaticamente invalidato |
 | Percentuale minima letture | Percentuale minima numero di misure valide (75%) |
@@ -421,10 +422,10 @@ Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/0
 | Tolleranza Span (%) | Tolleranza del valore di Span in percentuale |
 | Valore di riferimento Span | Valore di riferimento Span (unità ing.) |
 | <u>***Banco taratura***</u> |   |
-| Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO |
-| Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN |
-|| <img src="img/09a.png"></img> <img src="img/09b.png"></img> |
 | ID modulo i/o | ID del modulo i/o (4060/6068) |
+| Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN |
+| Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO |
+|| <img src="img/09a.png"></img> <img src="img/09b.png"></img> |
 | Utilizza banco di taratura | Utilizza banco di taratura composto da elettrovalvole pilotate da contatti i/o dei moduli ADAM 4000/5000<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- None (nessun banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OnlyBench (solo banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- InstrumentAndBench (invio comando allo strumento e gestione banco di taratura) |
 
 <br>
@@ -643,6 +644,20 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 | Tarature | Vedi [*Visualizzazione tarature*](#visualizzazione-tarature) |
 | Annulla tarature attive | Elimina tutte le tarature attive |
 
+#### Menù *Visualizza*
+
+<img src="img/45a.png"></img>
+
+|   |   |
+| - | - |
+| Normale | Vengono nascoste le colonne ID, Stato e Stazione  |
+| Compatto | Vengono nascoste le colonne ID, Comunicazione, Stato, Grezzo e Stazione |
+| Esteso | Vengono visualizzate tutte le colonne |
+
+Nella seguente immagine viene visualizzato il formato Esteso:
+
+<img src="img/45b.png"></img>
+
 ### Visualizzazione tarature
 
 <img src="img/38.png"></img>
@@ -662,7 +677,6 @@ Lista degli strumenti e parametri in polling con visualizzazione dei dati princi
 <img src="img/30.png"></img>
 
 ***Il significato delle colonne del quadro è il seguente:***
-
 
 |   |   |
 | - | - |
@@ -703,7 +717,6 @@ Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli o
 
 ***Il significato delle colonne del quadro è il seguente:***
 
-
 |   |   |
 | - | - |
 | Modulo | Nome del modulo/strumento |
@@ -729,7 +742,6 @@ Lista degli allarmi
 
 ***Il significato delle colonne del quadro è il seguente:***
 
-
 |   |   |
 | - | - |
 | Modulo | Nome del modulo/strumento |
@@ -754,7 +766,6 @@ Lista dei parametri in taratura
 <img src="img/33.png"></img>
 
 ***Il significato delle colonne del quadro è il seguente:***
-
 
 |   |   |
 | - | - |
