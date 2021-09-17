@@ -6,7 +6,7 @@
 
 ***Progetto Open Source*** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
 
-##### Ultimo aggiornamento: Agosto 2021
+##### Ultimo aggiornamento: Settembre 2021
 
 <br>
 <br>
@@ -25,18 +25,24 @@
 
 2. [LE DIRECTORY DEL PROGRAMMA](#2-le-directory-del-programma)
 
-    2.1 [Directory delle funzionalità di supporto](#21-directory-delle-funzionalità-di-supporto)<br>
-    2.2 [Directory per i dati](#22-directory-per-i-dati)
+    2.1 [Schema delle directory](#21-schema-delle-directory)<br>
+    2.2 [Directory delle funzionalità di supporto](#23-directory-delle-funzionalità-di-supporto)<br>
+    2.3 [Directory per i dati](#23-directory-per-i-dati)
 
 3. [OPAS-TOOLS](#3-opas-tools)
 
     3.1 [File - Configurazione](#31-file---configurazione)<br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *File*](#menù-file)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Moduli*](#menù-moduli)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Moduli*](#menù-proprietà-moduli)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Canali*](#menù-proprietà-canali)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione](#configurazione)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [I menù](#311-i-menù)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *File*](#menù-file)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Moduli*](#menù-moduli)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Moduli*](#menù-proprietà-moduli)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Proprietà Canali*](#menù-proprietà-canali)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.1.2 [La configurazione](#312-la-configurazione)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione del datalogger](#configurazione-del-datalogger)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione del modulo](#configurazione-del-modulo)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione del parametro](#configurazione-del-parametro)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione della taratura](#configurazione-della-taratura)<br>
 
     3.2 [File - Grafici](#32-file---grafici)<br>
     3.3 [File - Tarature](#33-file---tarature)
@@ -185,32 +191,127 @@ Dopo ciascun ***singolo ciclo di acquisizioni elementari***, l'insieme dei dati 
 
 ***Dopo il primo lancio del programma*** vengono create, automaticamente, una serie di directory organizzate in questo modo:
 
-### 2.1 Directory delle funzionalità di supporto
+### 2.1 Schema delle Directory
 
+```
+OPAS
+├── Advantech.Adam.DLL
+├── Advantech.Common.dll
+├── Advantech.Protocol.dll
+├── CHANGELOG
+├── EasyModbus.dll
+├── FluentFTP.dll
+├── INIFileParser.dll
+├── Ionic.Zip.dll
+├── License.txt
+├── NCalc.dll
+├── Newtonsoft.Json.dll
+├── OPAS-DL.exe
+├── OPAS-DL.exe.config
+├── OPAS-DL.ini
+├── OPAS-DL.pdf
+├── OPAS-MANAGER.exe
+├── OPAS-MANAGER.exe.config
+├── OPAS-TOOLS.exe
+├── OPAS-TOOLS.exe.config
+├── config
+│   ├── Config-PROVA.json
+│   ├── Config-Test.json
+│   └── backup
+│       ├── 20210331.123410.Config-Test.json
+│       ├── 20210331.134005.Config-Test.json
+│       └── ...
+├── dati_moduli
+│   └── dati-moduli.json
+├── file_istantanei
+│   └── istantenei.dat
+├── files_letture_csv
+│   ├── 202106
+│   │   ├── GC866-Benzene-2021-06-15.csv
+│   │   ├── GC866-Toluene-2021-06-16.csv
+│   │   └── ...
+│   ├── 202108
+│   |   ├── Adam_TCP_5017-Temperatura-2021-08-19.csv
+│   |   ├── Adam_TCP_5017-Temperatura_Cabina-2021-08-20.csv
+│   |   └── ...
+│   └── ...
+├── files_medie_csv
+│   ├── 202102
+│   │   └── ...
+│   └── ...
+├── files_medie_dat
+│   ├── 202102
+│   │   └── ...
+│   └── ...
+├── files_tarature_dat
+│   ├── 202102
+│   │   └── ...
+│   └── ...
+├── log
+│   ├── 202102
+│   │   ├── OPAS-DL-2021-02-02.log
+│   │   ├── OPAS-DL-2021-02-04.log
+│   │   └── ...
+│   ├── 202103
+│   │   ├── OPAS-DL-2021-03-31.log
+│   │   ├── OPAS-TOOLS-2021-03-11.log
+│   │   └── ...
+│   └── ...
+├── pipe
+│   └── iono.csv
+└── preset
+    ├── Config-GC866_INT.json
+    ├── Config-SWAM_5A_DD.json
+    └── ...
+```
+
+<br>
+
+### 2.2 Directory delle funzionalità di supporto
 
 |   |   |
 | - | - |
 | <b>config</b> | Contiene i files di configurazione del sistema in formato JSON |
-| <b>dati_moduli</b> | Viene salvato uno snapshot dei moduli e dei dati utilizzato al successivo riavvio, se non superiore al valore della variabile “dati-moduli-ritardo” configurata nel file INI |
+| <b>dati_moduli</b> | Viene salvato uno snapshot ogni 5 minuti dei moduli e dei dati utilizzato al successivo riavvio, se non superiore al valore della variabile “dati-moduli-ritardo” configurata nel file INI |
 | <b>log</b> | Files di log, con tutte le operazioni svolte dal software |
-| <b>pipe</b> | Contiene dei files utilizzati in lettura dai moduli virtuali che utilizzano come    fonte dati le “pipe” |
+| <b>pipe</b> | Contiene dei files utilizzati in lettura dai moduli virtuali che utilizzano come fonte dati le “pipe” |
+| <b>preset</b> | file config personalizzati in base alla tipologia di strumento |
+
 
 <br>
 
-### 2.2 Directory per i dati
-
+### 2.3 Directory per i dati
 
 |   |   |
 | - | - |
 | <b>file_istantanei</b> | <b>Dati istantanei salvati ad ogni ciclo di acquisizione</b> |
-| <b>files_letture_csv</b> | Dati di tutte le singole letture effettuate dal logger |
+| <b>files_letture_csv</b> | Dati di tutte le singole letture effettuate dal logger in formato CSV |
 | <b>files_medie_csv</b> | Dati mediati di tutti i parametri in formato CSV |
-| <b>files_medie_dat</b> | Dati mediati di tutti i parametri in formato ASCII (usato dal CED) |
-| <b>files_tarature_dat</b> | Dati delle tarature in formato ASCII (usato dal CED) |
+| <b>files_medie_dat</b> | Dati mediati di tutti i parametri in formato ASCII (inviato al CED) |
+| <b>files_tarature_dat</b> | Dati delle tarature in formato ASCII (inviato al CED) |
 
 <br>
 
 I file .csv sono scaricabili e visualizzabili all’interno della suite Office (Word, Excel).
+
+Infine, tutte le sottocartelle contenenti file di dati sono organizzate nella seguente maniera:
+ * Nome directory = <span style="color:blue">[ANNO]</span>+<span style="color:orange">[MESE]</span> -> ad esempio: '<span style="color:blue">2021</span><span style="color:orange">09</span>'
+ * Nome dei file = <span style="color:red">[NOME-FILE]</span>+<span style="color:green">[DATA-CON-GIORNO-SPECIFICO]</span> -> ad esempio: '<span style="color:red">GC866-Toluene</span>-<span style="color:green">2021-06-16</span>.csv'
+
+Di seguito è presente un esempio completo di file (percorso + contenuto):
+
+* C:\OPAS\files_medie_dat\\<span style="color:blue">2021</span><span style="color:orange">09</span>\\<span style="color:red">eco-dev</span>-<span style="color:green">2021-06-16</span>.dat
+
+* ```
+  '2021-09-16 23:00:00',1,38.9,0,1,100,0,'23:11:40',74.8,'23:15:20',22
+  '2021-09-16 23:00:00',2,32.7,0,1,100,0.4,'23:47:30',64.8,'23:10:10',18.4
+  '2021-09-16 23:00:00',3,12.7,0,1,100,0,'23:12:10',24.9,'23:27:10',7.3
+  '2021-09-16 23:00:00',2100,151.1,0,1,100,105.8,'23:20:02',185.2,'23:10:02',24.8
+  '2021-09-16 23:00:00',2101,-4.9,0,1,100,-9.6,'23:30:02',-1.4,'23:10:02',2.8
+  '2021-09-16 23:00:00',2102,1,0,1,100,0.9,'23:10:02',1.1,'23:50:02',0.1
+  ...
+  ...
+  ```
 
 <br>
 <br>
@@ -218,13 +319,11 @@ I file .csv sono scaricabili e visualizzabili all’interno della suite Office (
 
 ## 3 OPAS-TOOLS
 
-Il software OPAS-TOOLS viene utilizzato ***per gestire e creare le configurazioni*** che verranno poi utilizzate dal programma di acquisizione dati OPAS DL. Queste configurazioni sono dei semplici file JSON modificabili con qualsiasi editor di testo. Il programma permette di clonare parametri, strumenti e di auto generare i codici identificativi dei singoli parametri. Vengono inoltre impostati i settaggi delle porte seriali utilizzate per acquisire i dati quali velocità, bauds rate, parità ecc.<br>
+Il software OPAS-TOOLS viene utilizzato ***per gestire e creare le configurazioni*** che verranno poi utilizzate dal programma di acquisizione dati OPAS DL. Queste configurazioni sono dei semplici file JSON modificabili con qualsiasi editor di testo. Il programma permette di clonare parametri, strumenti e di auto generare i codici identificativi dei singoli parametri. Vengono inoltre impostati i settaggi delle porte seriali utilizzate per acquisire i dati quali velocità, bauds rate, parità ecc.
 
-Finestra principale programma<br>
+Finestra principale programma
+
 <img src="img/03.png"></img>
-
-Descrizione delle voci del menu<br>
-
 
 |   |   |
 | - | - |
@@ -244,10 +343,11 @@ Descrizione delle voci del menu<br>
 
 ### 3.1 File - Configurazione
 
+### 3.1.1 I menù
+
 #### Menù *File*
 
 <img src="img/11.png"></img>
-
 
 |   |   |
 | - | - |
@@ -271,7 +371,6 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <img src="img/13.png"></img>
 
-
 |   |   |
 | - | - |
 | Imposta ID progressivi | Utilizzato come riferimento per i moduli di taratura |
@@ -283,7 +382,6 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 #### Menù *Proprietà Canali*
 
 <img src="img/14.png"></img>
-
 
 |   |   |
 | - | - |
@@ -297,12 +395,14 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-#### Configurazione
+### 3.1.2 La Configurazione
 
 Ogni qualvolta una configurazione viene salvata il programma mantiene uno storico delle modifiche in modo da poter recuperare una configurazione funzionante in caso di problemi.<img src="img/04.png"></img>
 
 Occorre ***modificare tutti i parametri necessari*** al fine di configurare al meglio la strumentazione.<br>
 Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le proprietà. Salvare la configurazione a fine lavoro.
+
+#### Configurazione del datalogger
 
 <img src="img/05.png"></img>
 
@@ -321,10 +421,11 @@ Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le propr
 
 <br>
 
+#### Configurazione del modulo
+
 In seguito ***selezionare lo strumento che si vuole configurare***, compariranno le seguenti impostazioni da inserire:
 
 <img src="img/06.png"></img>
-
 
 |   |   |
 | - | - |
@@ -359,10 +460,11 @@ In seguito ***selezionare lo strumento che si vuole configurare***, compariranno
 
 <br>
 
+#### Configurazione del parametro
+
 Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti proprietà:
 
 <img src="img/07.png"></img>
-
 
 |   |   |
 | - | - |
@@ -385,7 +487,7 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 | Indirizzo Modbus | Indirizzo Modbus del canale con i valori di ritorno della taratura (usato per taratura GC866) |
 | Nome canale | Nome del canale |
 | Ordinamento del canale | Ordinamento del canale, solo come visualizzazione |
-| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) |
+| Tipo parametro | Tipologia del parametro, regola in quale finestra del datalogger compare <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (compare nel tab [*Principali*](#tab-principali) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Diagnostic (compare nel tab [*Diagnostici*](#tab-diagnostici) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Alarm (compare nel tab [*Allarmi*](#tab-allarmi) di OPAS-DL) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Hidden (Rimangono nascosti e vengono utilizzati come parametri di supporto nelle tarature del GC866) |
 | Tipologia dato | Tipologia del dato, normale o derivato da altri parametri <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Standard (Dato normale)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dependent (Dato derivato da altri parametri tramite [*formula valore derivato*](#for-val-der)) |
 | <u>***Filtri***</u> |   |
 | Minima media ammessa | Minimo valore mediato accettato, oltre al quale il dato viene automaticamente invalidato |
@@ -395,10 +497,13 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 
 <br>
 
+#### Configurazione della taratura
+
+<img src="img/06-2.png"></img>
+
 Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/08.png"></img> e compariranno le seguenti proprietà della taratura:
 
-<img src="img/09.png"></img>
-
+<img src="img/09-2.png"></img>
 
 |   |   |
 | - | - |
@@ -417,15 +522,16 @@ Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/0
 | Valore di riferimento Zero () (unità ing.) | Valore di riferimento Zero (unità ing.) |
 | <u>***Span***</u> |   |
 | Duranta lettura di Span (min) | Tempo durata lettura di Span in minuti |
-| Shift risultato (min) | Tempo di shift in minuti del risultato di span esposto sul protocollo MODBUS (usato per GC866) |
 | Stabilizzazione dello Span (min) | Tempo di stabilizzazione dello Span in minuti |
 | Tolleranza Span (%) | Tolleranza del valore di Span in percentuale |
 | Valore di riferimento Span | Valore di riferimento Span (unità ing.) |
+| Valore di riferimento Span Multiplo | Valore di riferimento Span Multiplo (unità ing.) |
+|| Una volta cliccato il campo di Span Multiplo, verrà aperta la seguente finestra dove sarà possibile aggiungere i 5 elementi cliccando il pulsante "Aggiungi" uno alla volta:<br><img src="img/09-3.png"></img><br>Una volta aggiunto l'elemento, sarà possibile inserire il valore di taratura come nella seguente immagine: <br><img src="img/09-4.png"></img><br>Una volta confermato con il pulsante "OK", nella tabella iniziale sarà possibile visualizzare, cliccando sulla freccia posta a lato del campo (vedi immagine seguente), l'array dei valori appena inseriti:<br><img src="img/09-5.png"></img> |
 | <u>***Banco taratura***</u> |   |
 | ID modulo i/o | ID del modulo i/o (4060/6068) |
 | Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN |
 | Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO |
-|| <img src="img/09a.png"></img> <img src="img/09b.png"></img> |
+|| <img src="img/09a.png"></img><br><img src="img/09b.png"></img> |
 | Utilizza banco di taratura | Utilizza banco di taratura composto da elettrovalvole pilotate da contatti i/o dei moduli ADAM 4000/5000<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- None (nessun banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OnlyBench (solo banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- InstrumentAndBench (invio comando allo strumento e gestione banco di taratura) |
 
 <br>
@@ -433,7 +539,6 @@ Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/0
 Per eliminare la taratura cliccare su Elimina
 
 <img src="img/10.png"></img>
-
 
 ### 3.2 File - Grafici
 
@@ -472,7 +577,6 @@ Verrà mostrato il ***grafico*** e la ***tabella dei dati*** riferita allo stess
 
 ***Il significato delle colonne del quadro è il seguente:***
 
-
 |   |   |
 | - | - |
 | Data | Data e ora di acquisizione del dato |
@@ -504,7 +608,6 @@ Cliccare il pulsante <img src="img/27.png"></img> per visualizzare i dati relati
 <img src="img/28.png"></img>
 
 ***Il significato delle colonne del quadro è il seguente:***
-
 
 |   |   |
 | - | - |
@@ -548,7 +651,6 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 #### Menu *File*
 
 <img src="img/40.png"></img>
-
 
 |   |   |
 | - | - |
@@ -795,7 +897,6 @@ Il modulo visualizzazione dati ***utilizza una tabella aggiornata in tempo reale
 
 <br>
 
-
 ### Visualizzazione grafica
 
 <img src="img/34.png"></img>
@@ -806,7 +907,6 @@ Il modulo dei grafici ***permette di plottare in tempo reale i dati acquisiti da
 
 <br>
 
-
 ### Visualizza configurazione
 
 <img src="img/37.png"></img>
@@ -814,7 +914,6 @@ Il modulo dei grafici ***permette di plottare in tempo reale i dati acquisiti da
 Il modulo “Visualizza configurazione” permette di ***visualizzare la configurazione della stazione***, ma in sola modalità di lettura.
 
 <br>
-
 
 ## 5 APPENDICE A 
 
@@ -935,7 +1034,6 @@ Il modulo “Visualizza configurazione” permette di ***visualizzare la configu
 
 Di seguito un ***esempio di file di configurazione del software*** ed una descrizione delle varie opzioni.
 
-
 |   |   |
 | - | - |
 | “schermo-intero” | Se impostato a “true” il programma parte a schermo intero |
@@ -948,38 +1046,49 @@ Di seguito un ***esempio di file di configurazione del software*** ed una descri
 | “configurazione” | Nome della configurazione salvata nella directory “config” |
 
 [Opzioni]
-; visualizza l'applicazione a schermo intero
-schermo-intero = false
 
-; posizione X,Y
-form-posizione = 93,27
-; dimensione W,H
-form-dimensione = 1013,788
+* ; visualizza l'applicazione a schermo intero
 
-; visualizza/nasconde la finestra eventi
-finestra-eventi = true
+    schermo-intero = false
 
-; massimo ritardo file dati moduli (moduli.json) in minuti
-; per essere riutilizzato durante uno start-up
-dati-moduli-ritardo = 5
+* ; posizione X,Y
 
-; programma esterno aggiornamento software
-programma-aggiornamento = OPAS-MANAGER.exe
+    form-posizione = 93,27
 
-; permette di avere una seconda istanza del programma
-seconda-istanza = false
+* ; dimensione W,H
 
-; livello log
-; Info = 0   ' information
-; Alert = 1  ' alerts
-; Errors = 2  ' errors
-; User = 3   ' user actions
-; Command = 4 ' command to be sent
-; Debug = 5   ' debug infos
-livello-log = 0
+    form-dimensione = 1013,788
 
-; file di configurazione in ./config/
-configurazione = Config-Sample.json
+* ; visualizza/nasconde la finestra eventi
+    
+    finestra-eventi = true
+
+* ; massimo ritardo file dati moduli (moduli.json) in minuti per essere riutilizzato durante uno start-up
+
+    dati-moduli-ritardo = 5
+
+* ; programma esterno aggiornamento software
+
+    programma-aggiornamento = OPAS-MANAGER.exe
+
+* ; permette di avere una seconda istanza del programma
+
+    seconda-istanza = false
+
+* ; livello log<br>
+  ; Info = 0   ' information<br>
+  ; Alert = 1  ' alerts<br>
+  ; Errors = 2  ' errors<br>
+  ; User = 3   ' user actions<br>
+  ; Command = 4 ' command to be sent<br>
+  ; Debug = 5   ' debug infos<br>
+
+    livello-log = 0
+
+* ; file di configurazione in ./config/
+
+    configurazione = Config-Sample.json
+
 <br>
 <br>
 <br>
@@ -1041,7 +1150,6 @@ Con <img src="img/57.png"></img> e <img src="img/58.png"></img> definiti sopra
 ### 7.6 Detection limit
 
 Il calcolo del limite di rilevabilità viene eseguito sulla base della media oraria (o altra integrazione secondo la configurazione) secondo la seguente logica tenendo conto delle seguenti variabili:
-
 
 |   |   |
 | - | - |
@@ -1176,22 +1284,26 @@ Eliminare icone store windows e outlook dalla barra delle applicazioni ed aggiun
    La Cartella OPAS-SUPPORT contiene 3 cartelle, 2 files .txt e un file.bat di startup
 
    <img src="img/61.png"></img>
-2. Eseguire il file CreateStartupLinks che inserisce nella cartella di ‘Esecuzione             automatica’ di Windows i link ai 2 applicativi:OPAS-DL e Cron
+
+2. Eseguire il file CreateStartupLinks che inserisce nella cartella di ‘Esecuzione automatica’ di Windows i link ai 2 applicativi: OPAS-DL e Cron
 
    <img src="img/62.png"></img>
 
    Questa operazione va eseguita solo la prima volta.
-3. Lanciare il file OPAS MANAGER.exe presente nella cartella OPAS e successivamente            cliccare il pulsante ‘Inizializza stazione’.
+3. Lanciare il file OPAS MANAGER.exe presente nella cartella OPAS e successivamente cliccare il pulsante ‘Inizializza stazione’.
 
    <img src="img/63.png"></img>
+
 4. Eseguire l’applicativo _Cron_ presente nella cartella OPAS-SUPPORT\Cron
 5. Eseguire l’applicativo _OPAS-TOOLS_ presente nella cartella OPAS
 6. Aprire finestra di ‘Configurazione’ la prima stazione.
 
    <img src="img/64.png"></img>
+
 7. Creare una ‘Nuova configurazione’
 
    <img src="img/65.png"></img>
+
 8. Compilare i campi della configurazione seguendo queste regole:
 
    <img src="img/66.png"></img>
@@ -1205,6 +1317,7 @@ Eliminare icone store windows e outlook dalla barra delle applicazioni ed aggiun
 11. Creare i moduli per l’acquisizione degli strumenti.
 
     <img src="img/67.png"></img>
+
 12. Configurare il modulo secondo l’installazione dello strumento (Porta seriale, ethernet…).
 13. Selezionare la voce di menu ‘Proprietà CanaliImposta gli ID e DatabaseID progressivi (non diagnostici) per assegnare i codici identificativi dei parametri acquisiti.
 
@@ -1225,12 +1338,15 @@ Per impedire il malfunzionamento del programma OPAS-DL, è necessario generare u
 1. Digitare “protezione da virus e minacce” nella barra della ricerca;
 
    <img src="img/70.png"></img>
+
 2. Cliccare su “Gestisci impostazioni”;
 
    <img src="img/71.png"></img>
+
 3. Scorrere la pagina verso il basso fino alla sezione chiamata “Esclusioni”:
 
    <img src="img/72.png"></img>
+   
 4. Per aggiungere una o più esclusioni, premere il pulsante “+ Aggiungi un’esclusione” e selezionare il una delle opzioni visualizzate
 
    <img src="img/73.png"></img>
@@ -1244,6 +1360,5 @@ Per impedire il malfunzionamento del programma OPAS-DL, è necessario generare u
 <br>
 <br>
 <br>
-
 
 ##### [Torna all'inizio](#sommario)
