@@ -49,35 +49,34 @@
 
 4. [OPAS-DL](#4-opas-dl)
 
-    [Software di acquisizione](#software-di-acquisizione)<br>
-    4.1 [Form contenitore](#41-form-contenitore)<br>
+    4.1 [Software di acquisizione](#41-software-di-acquisizione)<br>
+    4.2 [Form contenitore](#42-form-contenitore)<br>
    
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1 [I menù](#411-i-menù)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 [I menù](#421-i-menù)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *File*](#menu-file)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Strumenti*](#menù-strumenti)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Finestre*](#menù-finestre)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Help*](#menù-help)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2 [Barra inferiore](#412-barra-inferiore)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 [Barra inferiore](#422-barra-inferiore)<br>
 
-    4.2 [Acquisizione dati](#42-acquisizione-dati)
+    4.3 [Acquisizione dati](#43-acquisizione-dati)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 [I menù](#421-i-menù)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.3.1 [I menù](#431-i-menù)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Acquisizione*](#menù-acquisizione)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Impostazioni*](#menù-impostazioni)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Menù *Visualizza*](#menù-visualizza)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Visualizzazione tarature](#visualizzazione-tarature)<br>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 [I tab](#422-i-tab)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.3.2 [I tab](#432-i-tab)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Principali*](#tab-principali)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Diagnostici*](#tab-diagnostici)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Allarmi*](#tab-allarmi)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Tab *Tarature*](#tab-tarature)<br>
 
-    4.3 [Eventi applicazione](#43-eventi-applicazione)<br>
-   
-    [Visualizzazione tabellare](#visualizzazione-tabellare)<br>
-    [Visualizzazione grafica](#visualizzazione-grafica)<br>
-    [Visualizza configurazione](#visualizza-configurazione)<br>
+    4.4 [Eventi applicazione](#44-eventi-applicazione)<br>
+    4.5 [Visualizzazione tabellare](#45-visualizzazione-tabellare)<br>
+    4.6 [Visualizzazione grafica](#46-visualizzazione-grafica)<br>
+    4.7 [Visualizza configurazione](#47-visualizza-configurazione)<br>
 
 5. [APPENDICE A](#5-appendice-a)
 
@@ -343,9 +342,9 @@ Finestra principale programma
 
 ### 3.1 File - Configurazione
 
-### 3.1.1 I menù
+#### 3.1.1 I menù
 
-#### Menù *File*
+##### Menù *File*
 
 <img src="img/11.png"></img>
 
@@ -359,7 +358,7 @@ Finestra principale programma
 
 <br>
 
-#### Menù *Moduli*
+##### Menù *Moduli*
 
 <img src="img/12.png"></img>
 
@@ -367,7 +366,7 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-#### Menù *Proprietà Moduli*
+##### Menù *Proprietà Moduli*
 
 <img src="img/13.png"></img>
 
@@ -379,7 +378,7 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-#### Menù *Proprietà Canali*
+##### Menù *Proprietà Canali*
 
 <img src="img/14.png"></img>
 
@@ -395,14 +394,14 @@ Elenco di moduli e strumenti disponibili, selezionare un modulo per aggiungerlo 
 
 <br>
 
-### 3.1.2 La Configurazione
+#### 3.1.2 La Configurazione
 
 Ogni qualvolta una configurazione viene salvata il programma mantiene uno storico delle modifiche in modo da poter recuperare una configurazione funzionante in caso di problemi.<img src="img/04.png"></img>
 
 Occorre ***modificare tutti i parametri necessari*** al fine di configurare al meglio la strumentazione.<br>
 Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le proprietà. Salvare la configurazione a fine lavoro.
 
-#### Configurazione del datalogger
+##### Configurazione del datalogger
 
 <img src="img/05.png"></img>
 
@@ -421,7 +420,7 @@ Cliccare su un’impostazione qualsiasi delle tre liste per modificarne le propr
 
 <br>
 
-#### Configurazione del modulo
+##### Configurazione del modulo
 
 In seguito ***selezionare lo strumento che si vuole configurare***, compariranno le seguenti impostazioni da inserire:
 
@@ -460,7 +459,7 @@ In seguito ***selezionare lo strumento che si vuole configurare***, compariranno
 
 <br>
 
-#### Configurazione del parametro
+##### Configurazione del parametro
 
 Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti proprietà:
 
@@ -497,7 +496,7 @@ Infine cliccare sul parametro che vogliamo impostare, compariranno le seguenti p
 
 <br>
 
-#### Configurazione della taratura
+##### Configurazione della taratura
 
 <img src="img/06-2.png"></img>
 
@@ -632,7 +631,7 @@ Al primo avvio crea in automatico la struttura delle directory necessarie al cor
 
 <br>
 
-### Software di acquisizione
+### 4.1 Software di acquisizione
 
 Il programma è stato creato con una ***interfaccia principale che racchiude le diverse finestre*** per praticità di utilizzo. Il modulo principale racchiude tre schede: principali, diagnostici, tarature che vengono descritti qui di seguito.
 
@@ -642,13 +641,13 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-### 4.1 Form contenitore
+### 4.2 Form contenitore
 
 <img src="img/89.png"></img>
 
-### 4.1.1 I menù
+#### 4.2.1 I menù
 
-#### Menu *File*
+##### Menu *File*
 
 <img src="img/40.png"></img>
 
@@ -665,7 +664,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### Menù *Strumenti*
+##### Menù *Strumenti*
 
 <img src="img/41.png"></img>
 
@@ -680,7 +679,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### Menù *Finestre*
+##### Menù *Finestre*
 
 <img src="img/42.png"></img>
 
@@ -695,7 +694,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 
 <br>
 
-#### Menù *Help*
+##### Menù *Help*
 
 <img src="img/43.png"></img>
 
@@ -708,7 +707,7 @@ Al primo avvio del programma, assicurarsi che, nel file C:\OPAS\OPAS-DL.ini, sia
 <br>
 
 
-#### 4.1.2 Barra inferiore
+#### 4.2.2 Barra inferiore
 
 <img src="img/87.png"></img> 
 
@@ -722,13 +721,13 @@ Nella barra inferiore dell’applicazione vi è un piccolo menu che indica i seg
 
 <br>
 
-### 4.2 Acquisizione dati
+### 4.3 Acquisizione dati
 
 <img src="img/30.png"></img> 
 
-### 4.2.1 I menù
+#### 4.3.1 I menù
 
-#### Menù *Acquisizione*
+##### Menù *Acquisizione*
 
 <img src="img/44.png"></img>
 
@@ -737,7 +736,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 
 <br>
 
-#### Menù *Impostazioni*
+##### Menù *Impostazioni*
 
 <img src="img/45.png"></img>
 
@@ -746,7 +745,7 @@ Azzera conteggio letture errate	Ripristina il numero delle letture errate nella 
 | Tarature | Vedi [*Visualizzazione tarature*](#visualizzazione-tarature) |
 | Annulla tarature attive | Elimina tutte le tarature attive |
 
-#### Menù *Visualizza*
+##### Menù *Visualizza*
 
 <img src="img/45a.png"></img>
 
@@ -760,7 +759,7 @@ Nella seguente immagine viene visualizzato il formato Esteso:
 
 <img src="img/45b.png"></img>
 
-### Visualizzazione tarature
+##### Visualizzazione tarature
 
 <img src="img/38.png"></img>
 
@@ -770,9 +769,9 @@ Il modulo Tarature permette di ***gestire le tarature manuali ed automatiche del
 
 <br>
 
-### 4.2.2 I tab
+#### 4.3.2 I tab
 
-#### Tab *Principali*
+##### Tab *Principali*
 
 Lista degli strumenti e parametri in polling con visualizzazione dei dati principali, aggiornati ad ogni ciclo
 
@@ -811,7 +810,7 @@ Verrà associata un'icona alla riga in base all'azione selezionata:
 
 <br>
 
-#### Tab *Diagnostici*
+##### Tab *Diagnostici*
 
 Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli operativi
 
@@ -836,7 +835,7 @@ Lista dei parametri diagnostici finalizzata a separare questi ultimi da quelli o
 
 <br>
 
-#### Tab *Allarmi*
+##### Tab *Allarmi*
 
 Lista degli allarmi
 
@@ -861,7 +860,7 @@ Lista degli allarmi
 
 <br>
 
-#### Tab *Tarature*
+##### Tab *Tarature*
 
 Lista dei parametri in taratura
 
@@ -883,13 +882,13 @@ Lista dei parametri in taratura
 <br>
 
 
-### 4.3 Eventi applicazione
+### 4.4 Eventi applicazione
 
 <img src="img/86.png"></img>
 
 In questa finestra verranno visualizzati tutti gli eventi relativi ai moduli in acquisizione.<br>Cliccando il pulsante 'Pulisci lista' la finestra verrà svuotata di tutti i log. 
 
-### Visualizzazione tabellare
+### 4.5 Visualizzazione tabellare
 
 <img src="img/36.png"></img>
 
@@ -897,7 +896,7 @@ Il modulo visualizzazione dati ***utilizza una tabella aggiornata in tempo reale
 
 <br>
 
-### Visualizzazione grafica
+### 4.6 Visualizzazione grafica
 
 <img src="img/34.png"></img>
 
@@ -907,7 +906,7 @@ Il modulo dei grafici ***permette di plottare in tempo reale i dati acquisiti da
 
 <br>
 
-### Visualizza configurazione
+### 4.7 Visualizza configurazione
 
 <img src="img/37.png"></img>
 
