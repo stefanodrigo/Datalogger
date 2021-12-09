@@ -6,7 +6,7 @@
 
 ***Progetto Open Source*** <br> dedicato alla gestione di sistemi di monitoraggio ambientale
 
-##### Ultimo aggiornamento: Settembre 2021
+##### Ultimo aggiornamento: Dicembre 2021
 
 <br>
 <br>
@@ -26,7 +26,7 @@
 2. [LE DIRECTORY DEL PROGRAMMA](#2-le-directory-del-programma)
 
     2.1 [Schema delle directory](#21-schema-delle-directory)<br>
-    2.2 [Directory delle funzionalità di supporto](#23-directory-delle-funzionalità-di-supporto)<br>
+    2.2 [Directory delle funzionalità di supporto](#22-directory-delle-funzionalità-di-supporto)<br>
     2.3 [Directory per i dati](#23-directory-per-i-dati)
 
 3. [OPAS-TOOLS](#3-opas-tools)
@@ -43,6 +43,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione del modulo](#configurazione-del-modulo)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione del parametro](#configurazione-del-parametro)<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione della taratura](#configurazione-della-taratura)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Configurazione della taratura attraverso elettrovalvole](#configurazione-della-taratura-attraverso-elettrovalvole)<br>
 
     3.2 [File - Grafici](#32-file---grafici)<br>
     3.3 [File - Tarature](#33-file---tarature)
@@ -524,20 +525,38 @@ Per impostare una taratura automatica, cliccare su “Imposta” <img src="img/0
 | Stabilizzazione dello Span (min) | Tempo di stabilizzazione dello Span in minuti |
 | Tolleranza Span (%) | Tolleranza del valore di Span in percentuale |
 | Valore di riferimento Span | Valore di riferimento Span (unità ing.) |
-| Valore di riferimento Span Multiplo | Valore di riferimento Span Multiplo (unità ing.) |
+| Valore di riferimento Span Multiplo | Valore di riferimento Span Multiplo, utilizzato per il BTX (unità ing.) |
 || Una volta cliccato il campo di Span Multiplo, verrà aperta la seguente finestra dove sarà possibile aggiungere i 5 elementi cliccando il pulsante "Aggiungi" uno alla volta:<br><img src="img/09-3.png"></img><br>Una volta aggiunto l'elemento, sarà possibile inserire il valore di taratura come nella seguente immagine: <br><img src="img/09-4.png"></img><br>Una volta confermato con il pulsante "OK", nella tabella iniziale sarà possibile visualizzare, cliccando sulla freccia posta a lato del campo (vedi immagine seguente), l'array dei valori appena inseriti:<br><img src="img/09-5.png"></img> |
-| <u>***Banco taratura***</u> |   |
-| ID modulo i/o | ID del modulo i/o (4060/6068) |
-| Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN |
-| Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO |
-|| <img src="img/09a.png"></img><br><img src="img/09b.png"></img> |
-| Utilizza banco di taratura | Utilizza banco di taratura composto da elettrovalvole pilotate da contatti i/o dei moduli ADAM 4000/5000<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- None (nessun banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OnlyBench (solo banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- InstrumentAndBench (invio comando allo strumento e gestione banco di taratura) |
 
 <br>
 
 Per eliminare la taratura cliccare su Elimina
 
 <img src="img/10.png"></img>
+
+##### Configurazione della taratura attraverso elettrovalvole
+
+Per impostare una taratura attraverso elettrovalvole occorre, innanzitutto, una scheda D I/O (Digital Input/Output) come l'ADAM 4060/4068.
+
+Dalla configurazione, prendere nota dell'ID associato alla scheda ADAM (quello tra parentesi quadre):
+
+<img src="img/09-6.png"></img>
+
+Successivamente, selezionare lo strumento di cui si vuole effettuare la taratura e compilare la sezione "Banco taratura" della tabella vista precedentemente:
+
+<img src="img/09-7.png"></img>
+
+|   |   |
+| - | - |
+| <u>***Banco taratura***</u> |   |
+| ID modulo i/o | ID del modulo I/O (4060/4068) di cui si è preso nota precedentemente |
+| Maschera relè per Span | Maschera dei relè valvola/e di Span su scheda ADAM 40xx/50xx da chiudere per effettuare lo SPAN: il primo valore (0) corrisponde al primo canale della scheda, il secondo valore (1) al secondo canale e così via...<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- True = valvola chiusa<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- False = valvola aperta |
+|| <img src="img/09a.png"></img><br><img src="img/09b.png"></img> |
+| Maschera relè per Zero | Maschera dei relè valvola/e di Zero su scheda ADAM 40xx/50xx da chiudere per effettuare lo ZERO: il primo valore (0) corrisponde al primo canale della scheda, il secondo valore (1) al secondo canale e così via...<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- True = valvola chiusa<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- False = valvola aperta |
+|| <img src="img/09c.png"></img><br><img src="img/09d.png"></img> |
+| Utilizza banco di taratura | Utilizza banco di taratura composto da elettrovalvole pilotate da contatti i/o dei moduli ADAM 4000/5000<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- None (nessun banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- OnlyBench (solo banco di taratura) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- InstrumentAndBench (invio comando allo strumento e gestione banco di taratura) |
+
+<br>
 
 ### 3.2 File - Grafici
 
